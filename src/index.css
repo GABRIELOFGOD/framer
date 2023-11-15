@@ -56,3 +56,14 @@ button, p{
 .image::-webkit-scrollbar{
     display: none;
 }
+.colo{
+    background: blue;
+}
+
+.same{
+    margin: 10px 0;
+}
+
+.same img{
+    
+}
