@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: myFont;
+    src: url('../utils/font/Athletics-Regular.woff');
+}
+
+body{
+    font-family: myFont;
+}
+
+.test{
+    font-family: myFont;
+    font-weight: 400;
+    letter-spacing: -3px;
+    word-spacing: 0.5px;
+}
+
+.ahh{
+    position: relative;
+    overflow-y: hidden;
+}
+
+.ahh img{
+    position: absolute;
+    top: -280px;
+}
+
+.ehh{
+    position: relative;
+    overflow: hidden;
+}
+
+.ehh img{
+    height: 100%;
+    width: fit-content;
+}
