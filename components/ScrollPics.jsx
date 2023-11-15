@@ -4,7 +4,7 @@ import ScrollPicsCont from './ScrollPicsCont'
 const ScrollPics = () => {
 
   return (
-    <div>
+    <div className='py-12'>
         <ScrollPicsCont />
     </div>
   )

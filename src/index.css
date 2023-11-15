@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +15,10 @@
 
 body{
     font-family: myFont;
+}
+
+button, p{
+    font-family: 'Inter', sans-serif;
 }
 
 .test{
@@ -40,4 +46,13 @@ body{
 .ehh img{
     height: 100%;
     width: fit-content;
+}
+
+.image img{
+    margin: 10px;
+    width: 200px;
+}
+
+.image::-webkit-scrollbar{
+    display: none;
 }
