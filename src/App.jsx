@@ -4,6 +4,8 @@ import './App.css'
 import Layout from '../components/Layout'
 import Home from '../pages/Home'
 import Candidate from '../pages/Candidate'
+import Fiction from '../pages/Fiction'
+import About from '../pages/About'
 
 function App() {
 
@@ -19,6 +21,14 @@ function App() {
         {
           path: 'candidate',
           element: <Candidate />
+        },
+        {
+          path: 'fiction',
+          element: <Fiction />
+        },
+        {
+          path: 'about',
+          element: <About />
         }
       ]
     }

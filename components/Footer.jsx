@@ -8,7 +8,7 @@ const Footer = () => {
   const heading = [
     {
       text: 'home',
-      path: 'home'
+      path: '/'
     },
     {
       text: 'about us',

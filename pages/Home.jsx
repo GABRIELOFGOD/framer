@@ -25,7 +25,7 @@ const Home = () => {
         <div className='flex justify-between'>
           <div className='text-left'>
             <p className='text-textGray text-2xl w-[400px] py-5'>Explore our pools of talents to select which is best for your role</p>
-            <button className='bg-secondary shadow-md shadow-secondary rounded-full h-fit my-auto text-[12px] font-bold py-3 text-primary px-8'>Get started</button>
+            <button className='bg-secondary shadow-md shadow-secondary rounded-full h-fit my-auto text-[14px] font-bold py-3 text-primary px-8'>Get started</button>
           </div>
           <div className="w-[450px] h-[450px] mr-[-80px]">
             <img src="Images/Group 38.png" className='h-full w-full' alt="group image" />  
