@@ -2,6 +2,8 @@ import React from 'react'
 import AboutFeature from '../components/AboutFeature'
 import Hire from '../components/Hire'
 import Best from '../components/Best'
+import Focus from '../components/Focus'
+import NewsLetter from '../components/NewsLetter'
 
 const About = () => {
   return (
@@ -19,6 +21,8 @@ const About = () => {
       <AboutFeature />
       <Hire />
       <Best />
+      <Focus />
+      <NewsLetter />
     </div>
   )
 }

@@ -158,4 +158,59 @@ button, p{
     background: rgba(135, 207, 235, 0.203);
 }
 
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.toper{
+    background: url('Images/business-women-talking-near-desk-during-coffee-break-hallway-big-corporation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.toper::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.topper{
+    background: url('Images/business-women-talking-near-desk-during-coffee-break-hallway-big-corporation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.topper::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.full{
+    width: 300px;
+}
+
+.capitalize .active{
+    font-weight: bold;
+    color: #1570EF;
+}
+
+.fuller{
+    word-spacing: -2px;
+    letter-spacing: -3px;
+}
 

@@ -3,6 +3,7 @@ import Job from '../components/Job'
 import Roles from '../components/Roles'
 import CV from '../components/CV'
 import NewsLetter from '../components/NewsLetter'
+import Recruit from '../components/Recruit'
 
 const Candidate = () => {
   return (
@@ -35,7 +36,7 @@ const Candidate = () => {
       <Job />
       <Roles />
       <CV />
-      something Here
+      {/* <Recruit /> */}
       <NewsLetter />
     </div>
   )

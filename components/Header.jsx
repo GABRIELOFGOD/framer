@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 
 const Header = () => {
 
@@ -13,7 +13,7 @@ const Header = () => {
             path: 'candidate'
         },
         {
-            item: 'fiction by revlab',
+            item: 'fraction by revlab',
             path: 'fiction'
         },
         {
@@ -23,7 +23,7 @@ const Header = () => {
     ]
 
   return (
-    <div className='flex w-full h-20 my-auto justify-between py-5 px-28'>
+    <div className='flex w-full sticky z-50 bg-primary top-0 h-20 my-auto justify-between py-5 px-28'>
         <img
             src="/Images/Revlab logo (2).png"
             alt="logo"
@@ -33,11 +33,11 @@ const Header = () => {
             <ul className='capitalize my-auto flex gap-10'>
                 {
                     navlist.map((list, index) => (
-                        <Link
+                        <NavLink
                             key={index}
                             to={list.path}
                             className='font-700 text-textGray text-[14px]'
-                        >{list.item}</Link>
+                        >{list.item}</NavLink>
                     ))
                 }
             </ul>

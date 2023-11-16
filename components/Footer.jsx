@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex-1 flex mt-10 gap-20'>
-        <div className='flex flex-col leading-10 text-primary'>
+        <div className='flex capitalize flex-col leading-10 text-primary'>
           {
             heading.map((item, index) => (
               <NavLink className='capitalize' key={index} to={item.path}>{item.text}</NavLink>
