@@ -5,6 +5,7 @@ import Choose from '../components/Choose'
 import Talents from '../components/Talents'
 import ScrollPics from '../components/ScrollPics'
 import NewsLetter from '../components/NewsLetter'
+import Carousel from '../components/Carousel'
 
 const Home = () => {
   // const rocketLikes = [
@@ -24,11 +25,11 @@ const Home = () => {
         </h2>
         <div className='flex justify-between'>
           <div className='text-left'>
-            <p className='text-textGray text-2xl w-[400px] py-5'>Explore our pools of talents to select which is best for your role</p>
-            <button className='bg-secondary shadow-md shadow-secondary rounded-full h-fit my-auto text-[14px] font-bold py-3 text-primary px-8'>Get started</button>
+            <p className='text-textGray text-2xl w-[500px] py-5'>The leading start-up recruiter hiring the best talent for you</p>
+            <button className='bg-secondary rounded-full h-fit my-auto text-[15px] py-3 text-primary px-8'>Book a call</button>
           </div>
-          <div className="w-[450px] h-[450px] mr-[-80px]">
-            <img src="Images/Group 38.png" className='h-full w-full' alt="group image" />  
+          <div className="w-[450px] h-[450px] mt-[-100px] mr-[-80px]">
+            <img src="Images/baba.png" className='h-full w-full' alt="group image" />  
           </div>
         </div>
 
@@ -40,6 +41,9 @@ const Home = () => {
         {/* ================== FEATURE SECTION ================ */}
         <Discript />
 
+        {/* ================== COROUSEL IMAGE SLIDER ========== */}
+        <Carousel />
+
         {/* ================== WHY CHOOSE SECTION ================ */}
         <Choose />
 
@@ -47,7 +51,7 @@ const Home = () => {
         <Talents />
 
         {/* ================== TALENTS SECTION ================ */}
-        <ScrollPics />
+        {/* <ScrollPics /> */}
 
         {/* ================== TALENTS SECTION ================ */}
         <NewsLetter />

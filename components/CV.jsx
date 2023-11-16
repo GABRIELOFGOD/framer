@@ -9,10 +9,10 @@ const CV = () => {
         </div>
         <div className='py-3 form w-full'>
             <form onSubmit={e => e.preventDefault()}>
-                <input className='w-full p-3 m-3 rounded-xl' type="text" placeholder='Name' />
-                <input className='w-full p-3 m-3 rounded-xl' type="text" placeholder='Email' />
-                <textarea className='w-full p-3 m-3 rounded-xl' name="" id="" cols="10" placeholder='Message' rows="10"></textarea>
-            <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[14px] font-bold py-5 text-primary px-8'>Send Message</button>
+                <input className='w-full p-3 my-3 rounded-xl' type="text" placeholder='Name' />
+                <input className='w-full p-3 my-3 rounded-xl' type="text" placeholder='Email' />
+                <textarea className='w-full p-3 my-3 rounded-xl' name="" id="" cols="10" placeholder='Message' rows="10"></textarea>
+              <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[14px] font-bold py-5 text-primary px-8'>Send Message</button>
             </form>
         </div>
     </div>

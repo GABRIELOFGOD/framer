@@ -1,5 +1,5 @@
 import React from 'react'
-import {  NavLink } from 'react-router-dom'
+import {  Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
 
@@ -41,7 +41,7 @@ const Header = () => {
                     ))
                 }
             </ul>
-            <button className='bg-secondary rounded-full h-fit my-auto text-[14px] font-bold py-3 text-primary px-8'>Get started</button>
+            <button className='bg-secondary rounded-full h-fit my-auto text-[14px] py-3 text-primary px-8'><Link to='contact'>Contact us</Link></button>
         </div>
     </div>
   )

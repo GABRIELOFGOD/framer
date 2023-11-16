@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Candidate from '../pages/Candidate'
 import Fiction from '../pages/Fiction'
 import About from '../pages/About'
+import Contact from '../pages/Contact'
 
 function App() {
 
@@ -29,6 +30,10 @@ function App() {
         {
           path: 'about',
           element: <About />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
         }
       ]
     }

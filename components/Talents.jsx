@@ -4,7 +4,7 @@ const Talents = () => {
   return (
     <div className='flex flex-row-reverse mx-auto bg-dark py-44 px-32'>
         <div className='flex-1'>
-            <img src="Images/cup.png" className='mx-auto w-[350px]' alt="start-up" />
+            <img src="Images/cup.png" className='mx-auto' alt="start-up" />
         </div>
         <div className='flex-1'>
             <h2 className='w-[650px] leading-[4.5rem] text-primary text-6xl '>Hire the best <span className='text-greenText'>Talents </span>for your Start-up Teams</h2>

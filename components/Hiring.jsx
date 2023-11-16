@@ -41,9 +41,9 @@ const Hiring = () => {
                 <p className='text-secondary font-bold text-sm'>THE PROBLEM</p>
                 <h2 className=' test leading-[5rem] w-[400px] text-7xl py-6 '>How? <span className="text-secondary">Fraction</span> by Revlab works</h2>
                 <p className='text-textGray text-md leading-7 w-[350px]'>Use Revlab’s marketplace of vetted fractional executives.</p>
-                <img className='full my-3' src="Images/illustration.png" alt="Illustration-Image" />
+                <img className='full mt-12' src="Images/Revlabs illustrationaaaa.png" alt="Illustration-Image" />
             </div>
-            <div className="flex-1">
+            <div className="flex-1 ">
                 <p className="text-textGray py-4">STEP 1: CREATE A JOB POST</p>
                 <RoleCard details={contents[0]} />
                 <p className="text-textGray py-4">STEP 2: INTERVIEW AND CHOOSE</p>

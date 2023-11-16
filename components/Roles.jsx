@@ -31,7 +31,7 @@ const Roles = () => {
             <p className='text-secondary'>ROLES WE PLACE</p>
             <h2 className=' test leading-[4.5rem] text-6xl '>How we'll work together</h2>
             <p className='text-textGray text-xl w-[82%] pt-6 leading-8'>With hundreds of candidates registering with us each week, our 1:1 approach means we can't work with everyone. Here's what you can expect from us;</p>
-            <img className='w-full' src="Images/qqqq.png" alt="block-image" />
+            <img className='w-[400px]' src="Images/qqqq.png" alt="block-image" />
             <p className='text-secondary text-xl w-[82%] pt-6 leading-8'>With hundreds of candidates registering with us each week, our 1:1 approach means we can't work with everyone. Here's what you can expect from us;</p>
         </div>
         <div className='flex-1'>

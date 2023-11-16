@@ -4,6 +4,9 @@ import Hire from '../components/Hire'
 import Best from '../components/Best'
 import Focus from '../components/Focus'
 import NewsLetter from '../components/NewsLetter'
+import Globe from '../components/Globe'
+import Trustee from '../components/Trustee'
+import Love from '../components/Love'
 
 const About = () => {
   return (
@@ -21,7 +24,10 @@ const About = () => {
       <AboutFeature />
       <Hire />
       <Best />
-      <Focus />
+      {/* <Focus /> */}
+      <Globe />
+      <Trustee />
+      <Love />
       <NewsLetter />
     </div>
   )

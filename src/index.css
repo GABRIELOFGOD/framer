@@ -39,13 +39,15 @@ button, p{
 }
 
 .ehh{
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .ehh img{
-    height: 100%;
-    width: fit-content;
+    scale: 1.2;
+    position: absolute;
+    top: 0;
+    right: 100px;
 }
 
 .image img{
@@ -209,8 +211,42 @@ button, p{
     color: #1570EF;
 }
 
+.kere{
+    box-shadow: 2px 2px 10px #1570ef68;
+    width: 205px important;
+}
+
 .fuller{
     word-spacing: -2px;
     letter-spacing: -3px;
+}
+
+.disc{
+    overflow: hidden;
+    position: relative;
+}
+
+.disc img{
+    scale: 1.5;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.again::-webkit-scrollbar{
+    display: none;
+}
+
+.kizz{
+    box-shadow: 0 2px 3px #1570ef68;
+}
+
+.kizz2{
+    box-shadow: 1px 2px 3px #1570ef68;
+}
+
+.spenza img{
+    height: 150px;
+    margin: 20px;
 }
 
