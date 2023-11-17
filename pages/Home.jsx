@@ -36,12 +36,12 @@ const Home = () => {
     >
       <div className='w-full pb-0 md:pt-28 py-8 px-28 md:px-48'>
         {/* =============== HEROE SECTION ====================== */}
-        <h2 className='md:w-[850px] text-4xl font-[900] test md:leading-[5rem] md:text-7xl '>
+        <h2 className='md:w-[800px] text-4xl font-[900] test md:leading-[5rem] md:text-7xl '>
           We <span className='text-secondary'>build the Teams</span> behind Africa's most promising <span className='text-secondary'>Start-ups</span>
         </h2>
         <div className='md:flex justify-between'>
           <div className='md:text-left mx-auto md:mx-0 text-center'>
-            <p className='md:text-textGray text-sm md:text-2xl w-[240px] md:w-[500px] py-5'>We connect ambitious talent with high growth, VC backed, startups and scale-ups.</p>
+            <p className='md:text-textGray text-sm md:text-xl w-[240px] md:w-[500px] py-5'>We connect ambitious talent with high growth, VC backed, startups and scale-ups.</p>
             <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-3 text-xs py-2 text-primary px-4 md:px-8'>Book a call</button>
           </div>
           <div className="w-[450px] hidden md:flex h-[450px] mt-[-100px] mr-[-80px]">

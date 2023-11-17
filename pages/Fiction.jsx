@@ -15,7 +15,7 @@ const Fiction = () => {
           <button className='bg-secondary rounded-full h-fit my-auto text-[14px] font-bold py-3 text-primary px-8'>Find your next Executive</button>
         </div>
         <div className="flex-1 show">
-          <img src="Images/Group 39.png" alt="Fiction-Heroe-Image" />
+          <img src="Images/pic.png" alt="Fiction-Heroe-Image" />
         </div>
       </div>
       <Hiring />
