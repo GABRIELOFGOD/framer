@@ -26,7 +26,7 @@ const NewsLetter = () => {
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
     className='md:p-32 p-12 md:text-left text-center'>
-        <div className='bg-secondary rounded-xl px-12 py-14 flex'>
+        <div className='bg-secondary relative rounded-xl px-12 py-14 flex'>
             <div className='md:w-[70%] w-full'>
                 <h2 className="text-5xl pb-4 text-primary">Join Our Newsletter</h2>
                 <p className='text-primary leading-6 text-sm md:w-[70%]' >Stay ahead of the curve with our newsletter, where we share exclusive insights, industry news, and expert advice. Subscribe today and be part of our growing community of tech startup enthusiasts. </p>
@@ -35,7 +35,7 @@ const NewsLetter = () => {
                     <button className='p-4 md:my-auto md:h-fit bg-black md:w-fit w-full text-primary rounded-[35px]'>Subscribe</button>
                 </form>
             </div>
-            <img className='w-[300px] hidden md:flex' src="Images/mail with a frosted glass effect.png" alt="newsletter" />
+            <img className='absolute w-[500px] right-0 hidden md:flex' src="Images/mail with a frosted glass effect.png" alt="newsletter" />
         </div>
     </motion.div>
   )
