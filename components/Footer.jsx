@@ -53,7 +53,7 @@ const Footer = () => {
   const social = [<BsFacebook />, <BsTwitter />, <BsLinkedin />]
 
   return (
-    <div className='bg-dark px-24 py-8 flex'>
+    <div className='bg-dark p-8 md:px-24 md:py-8 md:flex'>
       <div className='flex-1'>
         <img className='w-[150px]' src="Images/Revlab logo.png" alt="logo" />
         <p className='text-textGray text-md pb-5 w-[400px] '>At Revlab, we partner with high-growth startups to source top-tier talent across all levels, from entry-level to C-suite. Our collaborative approach involves deeply understanding your company culture and specific requirements, enabling us to identify candidates perfectly aligned with your needs.</p>
@@ -61,7 +61,7 @@ const Footer = () => {
           {social.map((icon, index) => (<div className='text-primary p-2 rounded-full bg-textGray' key={index}>{icon}</div>))}
         </div>
       </div>
-      <div className='flex-1 flex mt-10 gap-20'>
+      <div className='flex-1 md:flex mt-10 gap-20'>
         <div className='flex capitalize flex-col leading-10 text-primary'>
           {
             heading.map((item, index) => (

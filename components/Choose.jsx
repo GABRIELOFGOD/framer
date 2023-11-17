@@ -4,6 +4,8 @@ import { IoIosSettings } from 'react-icons/io'
 import { SiStackbit } from 'react-icons/si'
 import { BsStars } from 'react-icons/bs'
 import { BiWorld } from 'react-icons/bi'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 import ChooseComp from './ChooseComp'
 
@@ -31,18 +33,39 @@ const Choose = () => {
             text: 'Enabled by technology and data to deliver unparalleled results in record time'
         }
     ]
+    
+  const ref = useRef(null)
+
+  const inView = useInView(ref, { once: true })
+
+  const mainControl = useAnimation()
+
+  useEffect(() => {
+    if(inView) {
+      mainControl.start('visible')
+    }
+  }, [inView])
 
   return (
-    <div className='py-20 px-28'>
-        <h2 className='text-center text-6xl'>Why Choose <span className='text-secondary'>Us</span>?</h2>
-        <p className='text-textGray text-2xl text-center py-5'>At Revlab, we provide end-to-end recruitment solutions, covering roles from entry-level to C-suite</p>
+    <motion.div
+    ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial='hidden'
+      animate={mainControl}
+      transition={{ duration: 0.5, delay: 1 }}
+    className='py-20 w-full px-16 md:px-28'>
+        <h2 className='text-center font-bold text-3xl md:text-6xl'>Why Choose <span className='text-secondary'>Us</span>?</h2>
+        <p className='text-textGray md:text-2xl text-center py-5'>At Revlab, we provide end-to-end recruitment solutions, covering roles from entry-level to C-suite</p>
         <div className='w-full justify-between flex flex-wrap'>
             <ChooseComp comp={content[0]} />
             <ChooseComp comp={content[1]} />
             <ChooseComp comp={content[2]} />
             <ChooseComp comp={content[3]} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

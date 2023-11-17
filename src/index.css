@@ -35,7 +35,6 @@ button, p{
 
 .ahh img{
     position: absolute;
-    top: -280px;
 }
 
 .ehh{
@@ -44,10 +43,9 @@ button, p{
 }
 
 .ehh img{
-    scale: 1.2;
+    /* scale: 1.2; */
     position: absolute;
     top: 0;
-    right: 100px;
 }
 
 .image img{
@@ -226,8 +224,13 @@ button, p{
     position: relative;
 }
 
+.disc1{
+    overflow: hidden;
+    position: relative;
+}
+
 .disc img{
-    scale: 1.5;
+    /* scale: 1.5; */
     position: absolute;
     top: 0;
     right: 100px;

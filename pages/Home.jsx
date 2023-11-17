@@ -1,4 +1,3 @@
-import React from 'react'
 import Rocket from '../components/Rocket'
 import Discript from '../components/Discript'
 import Choose from '../components/Choose'
@@ -6,29 +5,45 @@ import Talents from '../components/Talents'
 import ScrollPics from '../components/ScrollPics'
 import NewsLetter from '../components/NewsLetter'
 import Carousel from '../components/Carousel'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Home = () => {
-  // const rocketLikes = [
-  //   {
-  //     image: 'Images/star.png',
-  //     heading: 'Only for people who want to work in ',
+  
+  const ref = useRef(null)
 
-  //   }
-  // ]
+  const inView = useInView(ref, { once: true })
+
+  const mainControl = useAnimation()
+
+  useEffect(() => {
+    if(inView) {
+      mainControl.start('visible')
+    }
+  }, [inView])
 
   return (
-    <div>
-      <div className='w-full py-28 px-48'>
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial='hidden'
+      animate={mainControl}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
+      <div className='w-full md:py-28 py-8 px-28 md:px-48'>
         {/* =============== HEROE SECTION ====================== */}
-        <h2 className='w-[850px] test leading-[5rem] text-7xl '>
+        <h2 className='md:w-[850px] text-4xl font-[900] test md:leading-[5rem] md:text-7xl '>
           We <span className='text-secondary'>build the Teams</span> behind Africa's most promising <span className='text-secondary'>Start-ups</span>
         </h2>
-        <div className='flex justify-between'>
-          <div className='text-left'>
-            <p className='text-textGray text-2xl w-[500px] py-5'>The leading start-up recruiter hiring the best talent for you</p>
-            <button className='bg-secondary rounded-full h-fit my-auto text-[15px] py-3 text-primary px-8'>Book a call</button>
+        <div className='md:flex justify-between'>
+          <div className='md:text-left mx-auto text-center'>
+            <p className='md:text-textGray text-sm md:text-2xl w-[240px] md:w-[500px] py-5'>We connect ambitious talent with high growth, VC backed, startups and scale-ups.</p>
+            <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-3 text-xs py-2 text-primary px-4 md:px-8'>Book a call</button>
           </div>
-          <div className="w-[450px] h-[450px] mt-[-100px] mr-[-80px]">
+          <div className="w-[450px] hidden md:flex h-[450px] mt-[-100px] mr-[-80px]">
             <img src="Images/baba.png" className='h-full w-full' alt="group image" />  
           </div>
         </div>
@@ -55,7 +70,7 @@ const Home = () => {
 
         {/* ================== TALENTS SECTION ================ */}
         <NewsLetter />
-    </div>
+    </motion.div>
   )
 }
 

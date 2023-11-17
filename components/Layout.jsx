@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Layout = () => {
   return (
-    <div className='layout'>
+    <div className='layout w-full box-border'>
         <Header />
         <Outlet />
         <Footer />
