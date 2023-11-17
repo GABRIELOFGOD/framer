@@ -7,6 +7,7 @@ import NewsLetter from '../components/NewsLetter'
 import Carousel from '../components/Carousel'
 import { useRef, useEffect } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
+import Logos from '../components/Logos'
 
 const Home = () => {
   
@@ -26,20 +27,20 @@ const Home = () => {
     <motion.div
       ref={ref}
       variants={{
-        hidden: { opacity: 0, y: 75 },
+        hidden: { opacity: 0.3, y: 75 },
         visible: { opacity: 1, y: 0 },
       }}
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
     >
-      <div className='w-full md:py-28 py-8 px-28 md:px-48'>
+      <div className='w-full pb-0 md:pt-28 py-8 px-28 md:px-48'>
         {/* =============== HEROE SECTION ====================== */}
         <h2 className='md:w-[850px] text-4xl font-[900] test md:leading-[5rem] md:text-7xl '>
           We <span className='text-secondary'>build the Teams</span> behind Africa's most promising <span className='text-secondary'>Start-ups</span>
         </h2>
         <div className='md:flex justify-between'>
-          <div className='md:text-left mx-auto text-center'>
+          <div className='md:text-left mx-auto md:mx-0 text-center'>
             <p className='md:text-textGray text-sm md:text-2xl w-[240px] md:w-[500px] py-5'>We connect ambitious talent with high growth, VC backed, startups and scale-ups.</p>
             <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-3 text-xs py-2 text-primary px-4 md:px-8'>Book a call</button>
           </div>
@@ -49,6 +50,9 @@ const Home = () => {
         </div>
 
       </div>
+
+        {/* ================== LOGO CAROUSEL ================= */}
+        <Logos />
 
         {/* ================== ROCKET SECTION ================ */}
         <Rocket />

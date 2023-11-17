@@ -25,8 +25,8 @@ const Talents = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='flex flex-row-reverse mx-auto bg-dark py-44 px-32'>
-        <div className='flex-1'>
+    className='flex flex-row-reverse mx-auto bg-dark py-24 px-32'>
+        <div className='flex-1 my-auto'>
             <img src="Images/cup.png" className='mx-auto' alt="start-up" />
         </div>
         <div className='flex-1'>

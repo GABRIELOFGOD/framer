@@ -4,6 +4,8 @@ import { MdPivotTableChart } from 'react-icons/md'
 import { RiTableAltFill } from 'react-icons/ri'
 import { GiProgression } from 'react-icons/gi'
 import { PiNotepadFill } from 'react-icons/pi'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const AboutFeature = () => {
     const feature = [
@@ -24,13 +26,36 @@ const AboutFeature = () => {
             text: 'Fractional hires to develop strategy, build structure and create processes'
         }
     ]
+
+    
+  const ref = useRef(null)
+
+  const inView = useInView(ref, { once: true })
+
+  const mainControl = useAnimation()
+
+  useEffect(() => {
+    if(inView) {
+      mainControl.start('visible')
+    }
+  }, [inView])
+
   return (
-    <div className='py-12 px-40 flex bg-dark'>
+    <motion.div
+    ref={ref}
+      variants={{
+        hidden: { opacity: 0.3, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial='hidden'
+      animate={mainControl}
+      transition={{ duration: 0.5, delay: 1 }}
+    className='py-16 px-40 flex bg-dark'>
         <FeatureComp content={feature[0]} />
         <FeatureComp content={feature[1]} />
         <FeatureComp content={feature[2]} />
         <FeatureComp content={feature[3]} />
-    </div>
+    </motion.div>
   )
 }
 

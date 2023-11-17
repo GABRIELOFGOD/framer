@@ -1,6 +1,7 @@
 import React from 'react'
 import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Globe = () => {
     const canvasRef = useRef();
@@ -35,31 +36,45 @@ const Globe = () => {
         })
     })
 
-  return (
-    <div className='flex bg-black py-24 px-32'>
+      
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+    
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    className='flex bg-black py-24 px-32'>
         <div className="w-2/3">
             <h2 className='text-5xl text-primary'>Sectors we <span className="text-secondary">Cover</span></h2>
-            <div className='flex spenza flex-wrap'>
-                <img src="Images/Group 360.png" alt="globe-marketing icon" />
-                <img src="Images/Group 361.png" alt="globe-marketing icon" />
-                <img src="Images/Group 359.png" alt="globe-marketing icon" />
-                <img src="Images/Group 362.png" alt="globe-marketing icon" />
-                <img src="Images/Group 363.png" alt="globe-marketing icon" />
-                <img src="Images/Group 364.png" alt="globe-marketing icon" />
-                <img src="Images/Group 365.png" alt="globe-marketing icon" />
-                <img src="Images/Group 366.png" alt="globe-marketing icon" />
-                <img src="Images/Group 367.png" alt="globe-marketing icon" />
-                <img src="Images/Group 368.png" alt="globe-marketing icon" />
+            <div className=' split'>
+                <img src="Images/Frame 348.png" alt="globe-marketing icon" />
+                <img src="Images/Frame 354.png" alt="globe-marketing icon" />
             </div>
         </div>
-        <div className="w-[40%] items-start">
+        <div className="w-[45%] items-start">
         <canvas
             ref={canvasRef}
-            style={{ width: 700, height: 500, maxWidth: "100%", aspectRatio: 1 }}
+            style={{ width: 500, height: 500, maxWidth: "100%", aspectRatio: 1 }}
             />
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

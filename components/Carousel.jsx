@@ -7,28 +7,28 @@ const Carousel = () => {
 
     const content = [
         {
-            icon: 'Images/Iconoir-1.png',
-            text: 'oprations'
+        icon: 'Images/Iconoir-4.png',
+          text: 'operations'
         },
         {
-            icon: 'Images/Iconoir-3.png',
-            text: 'partnership'
+          icon: 'Images/Iconoir-3.png',
+          text: 'partnership'
         },
         {
-            icon: 'Images/Iconoir-7.png',
-            text: 'sales'
+          icon: 'Images/Iconoir-7.png',
+          text: 'sales'
         },
         {
-            icon: 'Images/Iconoir-6.png',
-            text: 'customer success'
+          icon: 'Images/Iconoir-6.png',
+          text: 'customer success'
         },
         {
-            icon: 'Images/Iconoir-2.png',
-            text: 'product'
+          icon: 'Images/Iconoir-2.png',
+          text: 'product'
         },
         {
-            icon: 'Images/Iconoir-4.png',
-            text: 'design'
+          icon: 'Images/Feather.png',
+          text: 'design'
         },
         {
             icon: 'Images/Iconoir-5.png',
@@ -61,8 +61,8 @@ const Carousel = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='overflow-x-scroll again'>
-        <div className='flex w-fit gap-4'>
+    className='overflow-x-hidden px-[220px] py-24 '>
+        <div className='grid justify-between grid-cols-4 w-full gap-4 '>
             <CarouselContent content={content[0]} />
             <CarouselContent content={content[1]} />
             <CarouselContent content={content[2]} />
@@ -72,6 +72,16 @@ const Carousel = () => {
             <CarouselContent content={content[6]} />
             <CarouselContent content={content[7]} />
         </div>
+        {/* <div className=' w-fit gap-4 caro'>
+            <CarouselContent content={content[0]} />
+            <CarouselContent content={content[1]} />
+            <CarouselContent content={content[2]} />
+            <CarouselContent content={content[3]} />
+            <CarouselContent content={content[4]} />
+            <CarouselContent content={content[5]} />
+            <CarouselContent content={content[6]} />
+            <CarouselContent content={content[7]} />
+        </div> */}
     </motion.div>
   )
 }

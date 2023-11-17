@@ -1,5 +1,7 @@
 import React from 'react'
 import TestimonyCard from './TestimonyCard'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Love = () => {
 
@@ -15,17 +17,39 @@ const Love = () => {
             testimony: 'To expand our tech team, we turned to Revlab. They acted swiftly, grasped our requirements, and provided candidates who not only understood the job but were also deeply committed and passionate about our mission. Now, Revlab manages all our recruitment needs at Dee-Jones.'
         }
     ]
-  return (
-    <div className='py-20 px-[300px]'>
+    
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+    
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    className='py-20 px-[300px]'>
         <div className="text-center">
             <p className='text-secondary text-sm font-bold'>CLIENTS REVIEW</p>
-            <h2 className='text-4xl py-5'>Loved by industry leaders.</h2>
+            <h2 className='text-4xl py-8'>Loved by industry leaders.</h2>
         </div>
         <div className='flex justify-between'>
             <TestimonyCard content={testimonies[0]} />
             <TestimonyCard content={testimonies[1]} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

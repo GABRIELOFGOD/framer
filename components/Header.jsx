@@ -25,11 +25,13 @@ const Header = () => {
 
   return (
     <div className='flex w-full sticky z-50 bg-primary top-0 h-20 my-auto justify-between px-8 py-5 lg:py-5 lg:px-28'>
-        <img
-            src="/Images/Revlab logo (2).png"
-            alt="logo"
-            className='w-fit'
-        />
+        <Link to='/'>
+            <img
+                src="/Images/Revlab logo (2).png"
+                alt="logo"
+                className='w-fit'
+            />
+        </Link>
         <div className='hidden lg:flex gap-32'>
             <ul className='capitalize my-auto flex gap-10'>
                 {

@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 import RoleCard from './RoleCard'
 
@@ -20,9 +22,30 @@ const Hiring = () => {
             link: 'Hire Executives'
         }
     ]
+    
+    const ref = useRef(null)
 
-  return (
-    <div>
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+    
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    >
         <div className='flex px-52 gap-10 py-20'>
             <div className="flex-1">
                 <p className='text-secondary font-bold text-sm'>THE PROBLEM</p>
@@ -36,14 +59,14 @@ const Hiring = () => {
                 <RoleCard details={contents[2]} />
             </div>
         </div>
-        <div className='flex flex-row-reverse px-52 gap-[100px] py-20'>
-            <div className="flex-1">
+        <div className='flex relative flex-row-reverse px-52 gap-[100px] py-20'>
+            <div className=" w-[500px] flex flex-col right-5">
                 <p className='text-secondary font-bold text-sm'>THE PROBLEM</p>
                 <h2 className=' test leading-[5rem] w-[400px] text-7xl py-6 '>How? <span className="text-secondary">Fraction</span> by Revlab works</h2>
                 <p className='text-textGray text-md leading-7 w-[350px]'>Use Revlab’s marketplace of vetted fractional executives.</p>
                 <img className='full mt-12' src="Images/Revlabs illustrationaaaa.png" alt="Illustration-Image" />
             </div>
-            <div className="flex-1 ">
+            <div className=" w-[700px]">
                 <p className="text-textGray py-4">STEP 1: CREATE A JOB POST</p>
                 <RoleCard details={contents[0]} />
                 <p className="text-textGray py-4">STEP 2: INTERVIEW AND CHOOSE</p>
@@ -52,7 +75,7 @@ const Hiring = () => {
                 <RoleCard details={contents[2]} />
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

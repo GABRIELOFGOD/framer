@@ -1,5 +1,7 @@
 import React from 'react'
 import BenefitCard from './BenefitCard'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Benefits = () => {
 
@@ -26,20 +28,42 @@ const Benefits = () => {
         }
         
     ]
-  return (
-    <div className='px-42 py-12'>
+      
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+  
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    className='px-42 py-12'>
         <div className='w-full text-center'>
             <p className=' font-bold text-sm text-textGray'>OUR BENEFITS</p>
             <h2 className='text-dark fuller w-full py-8 text-7xl'>Hire <span className="text-secondary">right</span>, Hire <span className="text-secondary">fast</span></h2>
             <p className='text-textGray '>With Revlab, you can find and hire a fractional executive in weeks, not months</p>
         </div>
-        <div className='flex flex-wrap px-48 py-24'>
+        <div className='flex flex-wrap justify-between w-full px-48 py-24'>
             <BenefitCard content={benefits[0]} />
             <BenefitCard content={benefits[1]} />
             <BenefitCard content={benefits[2]} />
             <BenefitCard content={benefits[3]} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

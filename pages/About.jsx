@@ -17,8 +17,8 @@ const About = () => {
           <p className='text-textGray w-[400px] text-2xl py-5'>Explore our pools of talents to select which is best for your role</p>
           <button className='bg-secondary rounded-full h-fit my-auto text-[14px] font-bold py-4 text-primary px-8'>Get in touch</button>
         </div>
-        <div className="w-[450px] flex-1 mt-[400px] h-[450px] mr-[-80px]">
-            <img src="Images/Group 38.png" className='h-full w-full' alt="group image" />  
+        <div className=" flex-1 mt-[200px] mr-[-80px]">
+            <img src="Images/Group 40.png" className='h-full w-full' alt="group image" />  
           </div>
       </div>
       <AboutFeature />

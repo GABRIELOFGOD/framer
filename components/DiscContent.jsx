@@ -1,9 +1,42 @@
 import React from 'react'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const DiscContent = () => {
-  return (
-    <div>
-        <div className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
+     
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+    
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    >
+        <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+        className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
@@ -14,8 +47,17 @@ const DiscContent = () => {
             <div className='md:flex-1 disc w-full h-[350px] md:h-full'>
                 <img className='scale-[1.5]' src="Images/african-american-business-man-reading-news-talking-phone.jpg" alt="disc image" />
             </div>
-        </div>
-        <div className='mx-auto flex md:flex-row-reverse flex-col-reverse box-border h-[600px]'>
+        </motion.div>
+        <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }} 
+        className='mx-auto flex md:flex-row-reverse flex-col-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] w-[300px]'>Technical <span className='text-secondary'>Talent </span>Acquisition</h2>
@@ -26,8 +68,17 @@ const DiscContent = () => {
             <div className='md:flex-1 ahh disc1 w-full h-[450px] md:h-full'>
                 <img className='scale-[1] top-[-200px] md:top-[-250px]' src="Images/woman-keeps-stylus-temple-uses-graphic-tablet-painting-works-with-digital-touch-pad-application-poses-street-downton-against-city-skyscraper-develops-new-design (1).jpg" alt="disc image" />
             </div>
-        </div>
-        <div className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
+        </motion.div>
+        <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }} 
+        className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-[950] md:font-normal text-4xl text-left md:leading-[5rem] md:w-[300px]'>Fractional by <span className='text-secondary'>Revlab</span></h2>
@@ -38,7 +89,7 @@ const DiscContent = () => {
             <div className='md:flex-1 ehh md:right-[100px] w-full h-[350px] md:h-full'>
                 <img className='scale-[1.2]' src="Images/workers-giving-ideas-new-project.jpg" alt="disc image" />
             </div>
-        </div>
+        </motion.div>
         {/* <div className='mx-auto flex flex-row-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full py-20'>
                 <div className="mx-auto pl-10">
@@ -65,7 +116,7 @@ const DiscContent = () => {
                 <img className='' src="Images/workers-giving-ideas-new-project.jpg" alt="disc image" />
             </div>
         </div> */}
-    </div>
+    </motion.div>
   )
 }
 

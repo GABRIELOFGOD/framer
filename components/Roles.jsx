@@ -1,5 +1,7 @@
 import React from 'react'
 import RoleCard from './RoleCard'
+import { useRef, useEffect } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 const Roles = () => {
 
@@ -25,8 +27,30 @@ const Roles = () => {
             text: 'We\'ll then search for opportunities on your behalf, make intro\'s to our clients and secure your next job.'
         }
     ]
-  return (
-    <div className='flex py-32 px-52 gap-6'>
+    
+    const ref = useRef(null)
+
+    const inView = useInView(ref, { once: true })
+  
+    const mainControl = useAnimation()
+  
+    useEffect(() => {
+      if(inView) {
+        mainControl.start('visible')
+      }
+    }, [inView])
+    
+    return (
+      <motion.div
+      ref={ref}
+        variants={{
+          hidden: { opacity: 0.3, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial='hidden'
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 1 }}
+    className='flex py-32 px-52 gap-6'>
         <div className='flex-1'>
             <p className='text-secondary'>ROLES WE PLACE</p>
             <h2 className=' test leading-[4.5rem] text-6xl '>How we'll work together</h2>
@@ -41,7 +65,7 @@ const Roles = () => {
             <RoleCard details={contents[3]} />
             <RoleCard details={contents[4]} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

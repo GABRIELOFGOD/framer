@@ -12,7 +12,7 @@ export default {
         'primary': '#ffff',
         'secondary': '#1570EF',
         'textGray': '#45596E',
-        'dark': '#101828',
+        'dark': '#000719',
         'greenText': '#52ff80'
       },
     },

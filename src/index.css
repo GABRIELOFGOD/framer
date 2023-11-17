@@ -154,9 +154,9 @@ button, p{
     height: 65px;
 }
 
-.bgan{
+/* .bgan{
     background: rgba(135, 207, 235, 0.203);
-}
+} */
 
 .scroller::-webkit-scrollbar{
     display: none;
@@ -205,7 +205,6 @@ button, p{
 }
 
 .capitalize .active{
-    font-weight: bold;
     color: #1570EF;
 }
 
@@ -236,16 +235,15 @@ button, p{
     right: 100px;
 }
 
-.again::-webkit-scrollbar{
-    display: none;
-}
+
 
 .kizz{
     box-shadow: 0 2px 3px #1570ef68;
 }
 
 .kizz2{
-    box-shadow: 1px 2px 3px #1570ef68;
+    box-shadow: 0.5px 0.5px 5px #1570ef68;
+    border: 1px solid #1570ef68;
 }
 
 .spenza img{
@@ -253,3 +251,52 @@ button, p{
     margin: 20px;
 }
 
+.graddy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(#457ff5, #101828, transparent);
+    left: 0;
+    bottom: -48%;
+    /* z-index: -9; */
+}
+
+.show{
+    z-index: 9;
+}
+
+.caro{
+    animation: 5s linear infinite scrolling;
+    display: flex;
+}
+
+.again::-webkit-scrollbar{
+    display: none;
+}
+
+.again{
+    white-space: nowrap;
+    display: flex;
+}
+
+@keyframes scrolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.wili img{
+    height: 80px;
+}
+
+.popi{
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.607);
+}
+
+.split img{
+    width: 600px;
+    margin-top: 30px;
+}
