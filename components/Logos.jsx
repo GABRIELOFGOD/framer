@@ -1,10 +1,9 @@
 import React from 'react'
-import { baseUrl } from '../context/serverCall'
 
 const Logos = () => {
   return (
     <div className='hidden md:block'>
-        <h2 className='text-3xl px-20'>Used by <span className="text-secondary">African's</span> fast growing company</h2>
+        <h2 className='text-3xl px-20'>Used by fast-growing <span className="text-secondary">companies</span></h2>
         <div className='py-6'>
             <div className=' flex wili justify-between px-24 w-full'>
                 <img src='Images/1.jpg' alt="Logo-carousel" />

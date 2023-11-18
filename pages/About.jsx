@@ -14,7 +14,7 @@ const About = () => {
       <div className='flex gap-10 py-12 px-52'>
         <div className='flex-1'>
           <h2 className=' test w-[600px] leading-[5rem] text-7xl '>The <span className='text-secondary'>modern</span> search firm exclusively for <span className="text-secondary">startups</span> and <span className="text-secondary">scaleups</span></h2>
-          <p className='text-textGray w-[400px] text-2xl py-5'>Let's talk talents</p>
+          <p className='text-textGray w-[400px] text-2xl py-5'>Let's talk talent</p>
           <button className='bg-secondary rounded-full h-fit my-auto text-[14px] font-bold py-4 text-primary px-8'>Get in touch</button>
         </div>
         <div className=" flex-1 mt-[200px] mr-[-80px]">

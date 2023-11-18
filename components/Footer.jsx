@@ -31,11 +31,11 @@ const Footer = () => {
     },
     {
       text: 'Fraction by Revlab',
-      path: ''
+      path: '/fraction'
     },
     {
       text: 'Technical Talent Acquisition',
-      path: ''
+      path: '/#talent'
     }
   ]
 
@@ -46,7 +46,7 @@ const Footer = () => {
     },
     {
       text: 'contact us',
-      path: 'contact'
+      path: '/contact'
     }
   ]
 

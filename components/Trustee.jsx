@@ -33,7 +33,7 @@ const Trustee = () => {
         </div>
         <div className="flex-1 my-auto text-primary">
             <h2 className='text-7xl'>Consented data on <span className="text-greenText">180,000 +</span> candidates</h2>
-            <p className='text-xl pt-20'>We want to cut the time it takes to make an exceptional hire without compromising on Talent quality</p>
+            <p className='text-xl pt-20'>We want to cut the time it takes to make an exceptional hire without compromising on Talent quality.</p>
         </div>
     </motion.div>
   )

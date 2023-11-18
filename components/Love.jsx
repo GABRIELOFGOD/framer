@@ -45,7 +45,7 @@ const Love = () => {
     className='py-20 px-[300px]'>
         <div className="text-center">
             <p className='text-secondary text-sm font-bold'>CLIENTS REVIEW</p>
-            <h2 className='text-4xl py-8'>Loved by industry leaders.</h2>
+            <h2 className='text-4xl py-8'>What our clients say.</h2>
         </div>
         <div className='flex justify-between'>
             <TestimonyCard content={testimonies[0]} />

@@ -37,7 +37,7 @@ const DiscContent = () => {
         initial='hidden'
         animate={mainControl}
         transition={{ duration: 0.5, delay: 1 }}
-        className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
+        className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]' id='executive'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
@@ -58,7 +58,7 @@ const DiscContent = () => {
         initial='hidden'
         animate={mainControl}
         transition={{ duration: 0.5, delay: 1 }} 
-        className='mx-auto flex md:flex-row-reverse flex-col-reverse box-border h-[600px]' id='executive'>
+        className='mx-auto flex md:flex-row-reverse flex-col-reverse box-border h-[600px]' id='talent'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] w-[300px]'>Technical <span className='text-secondary'>Talent </span>Acquisition</h2>
