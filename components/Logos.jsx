@@ -8,7 +8,7 @@ const Logos = () => {
             <div className=' flex wili justify-between px-24 w-full'>
                 <img src='Images/1.jpg' alt="Logo-carousel" />
                 <img src='Images/2.jpg' alt="Logo-carousel" />
-                {/* <img src="Images/2.jpg" alt="Logo-carousel" /> */}
+                <img src="Images/rayda new.png" alt="Logo-carousel" />
                 <img src='Images/3.jpg' alt="Logo-carousel" />
                 <img src='Images/4.jpg' alt="Logo-carousel" />
                 <img src='Images/5.jpg' alt="Logo-carousel" />

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
@@ -50,7 +51,20 @@ const Footer = () => {
     }
   ]
 
-  const social = [<BsFacebook />, <BsTwitter />, <BsLinkedin />]
+  const social = [
+    {
+      icon: <BsFacebook />,
+      link: ''
+    },
+    {
+      icon: <BsTwitter />,
+      link: ''
+    },
+    {
+      icon: <BsLinkedin />,
+      link: ''
+    }
+  ]
 
   return (
     <div className='bg-dark p-8 md:px-24 md:py-8 md:flex'>
@@ -58,7 +72,13 @@ const Footer = () => {
         <img className='w-[150px]' src="Images/Revlab logo.png" alt="logo" />
         <p className='text-textGray text-md pb-5 w-[400px] '>At Revlab, we partner with high-growth startups to source top-tier talent across all levels, from entry-level to C-suite. Our collaborative approach involves deeply understanding your company culture and specific requirements, enabling us to identify candidates perfectly aligned with your needs.</p>
         <div className='flex gap-4'>
-          {social.map((icon, index) => (<div className='text-primary p-2 rounded-full bg-textGray' key={index}>{icon}</div>))}
+          {
+            social.map((icon, index) => (
+              <Link to={icon.link} key={index}>
+                <div className='text-primary p-2 rounded-full bg-textGray'>{icon.icon}</div>
+              </Link>
+            ))
+          }
         </div>
       </div>
       <div className='flex-1 md:flex mt-10 gap-20'>

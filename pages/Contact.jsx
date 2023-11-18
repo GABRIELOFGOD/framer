@@ -2,6 +2,7 @@ import React from 'react'
 import { BsTwitter, BsLinkedin, BsYoutube, BsInstagram } from 'react-icons/bs'
 
 import { IoMdArrowForward } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
 
@@ -16,7 +17,7 @@ const Contact = () => {
         },
         {
             icon: <BsInstagram />,
-            path: ''
+            path: 'https://instagram.com/revlab_africa?igshid=NGVhN2U2NjQ0Yg=='
         },
         {
             icon: <BsYoutube />,
@@ -55,7 +56,9 @@ const Contact = () => {
                     {/* <p className='flex gap-3'>Tel: +2349061932179 <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i></p> */}
                     <div className='flex gap-5 py-5'>
                         {social.map((media, index)=>(
-                            <div className='p-[10px] rounded-full text-primary bg-secondary' key={index}>{media.icon}</div>
+                            <Link to={media.path} key={index}>
+                                <div className='p-[10px] rounded-full text-primary bg-secondary'>{media.icon}</div>
+                            </Link>
                         ))}
                     </div>
                 </div>

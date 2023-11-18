@@ -63,7 +63,7 @@ const Globe = () => {
         <div className="w-2/3">
             <h2 className='text-5xl text-primary'>Sectors we <span className="text-secondary">Cover</span></h2>
             <div className=' split'>
-                <img src="Images/Frame 348.png" alt="globe-marketing icon" />
+                <img src="Images/nnnnn.png" alt="globe-marketing icon" />
                 <img src="Images/Frame 354.png" alt="globe-marketing icon" />
             </div>
         </div>

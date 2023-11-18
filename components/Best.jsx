@@ -32,7 +32,7 @@ const Best = () => {
         </div>
         <div className="flex-1 my-auto">
             <h2 className=' test leading-[4.5rem] text-7xl '>What we do <span className="text-greenText">Best</span></h2>
-            <p className='text-primary text-xl w-[550px] py-5 leading-8'>At Revlab, our seasoned search professionals leverage profound expertise, cutting-edge technology, and a database of 180k candidates to facilitate impactful hires swiftly.</p>
+            <p className='text-primary text-xl w-[550px] py-5 leading-8'>At Revlab, our seasoned search professionals leverage profound expertise, cutting-edge technology, and a database of 180k candidates to connect you with highly-sort-after candidates with a strong track-record of performance.</p>
         </div>
     </motion.div>
   )
