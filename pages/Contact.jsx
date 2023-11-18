@@ -52,7 +52,7 @@ const Contact = () => {
                     <p className='py-4 text-md text-textGray'>Ikeja Lagos, Nigeria.</p>
                 </div>
                 <div>
-                    <p className='flex gap-3'>Tel: +2349061932179 <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i></p>
+                    {/* <p className='flex gap-3'>Tel: +2349061932179 <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i></p> */}
                     <div className='flex gap-5 py-5'>
                         {social.map((media, index)=>(
                             <div className='p-[10px] rounded-full text-primary bg-secondary' key={index}>{media.icon}</div>

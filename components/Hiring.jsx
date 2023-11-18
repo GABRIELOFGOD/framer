@@ -22,6 +22,25 @@ const Hiring = () => {
             link: 'Hire Executives'
         }
     ]
+
+    const content = [
+        {
+            topic: 'Tell us what you are looking for',
+            text: 'Craft and share a job post with your requirements and preferences. we\'ll make sure we match you to the right executives',
+            link: 'Start today'
+        },
+        {
+            topic: 'Get 5 hand-picked profiles and pitches',
+            text: 'Revlab matches 5 ideal executives to you within 48 hours. View the candidates\' profiles and job-specific pitches before scheduling interviews'
+        },
+        {
+            topic: 'Hire and onboard with ease',
+            text: 'Revlab streamlines the process from start to finish, including contract signing, invoicing, and payments etc',
+            link: 'Hire Executives'
+        }
+    ]
+
+
     
     const ref = useRef(null)
 
@@ -60,19 +79,19 @@ const Hiring = () => {
             </div>
         </div>
         <div className='flex relative flex-row-reverse px-52 gap-[100px] py-20'>
-            <div className=" w-[500px] flex flex-col right-5">
-                <p className='text-secondary font-bold text-sm'>THE PROBLEM</p>
-                <h2 className=' test leading-[5rem] w-[400px] text-7xl py-6 '>How? <span className="text-secondary">Fraction</span> by Revlab works</h2>
+            <div className=" w-[500px] flex mr-[-50px] flex-col right-3">
+                <p className='text-secondary font-bold text-sm'>THE SOLUTION</p>
+                <h2 className=' test leading-[5rem] w-[400px] text-7xl py-6 '>How <span className="text-secondary">Fraction</span> works?</h2>
                 <p className='text-textGray text-md leading-7 w-[350px]'>Use Revlab’s marketplace of vetted fractional executives.</p>
                 <img className='full mt-12' src="Images/Revlabs illustrationaaaa.png" alt="Illustration-Image" />
             </div>
             <div className=" w-[700px]">
                 <p className="text-textGray py-4">STEP 1: CREATE A JOB POST</p>
-                <RoleCard details={contents[0]} />
+                <RoleCard details={content[0]} />
                 <p className="text-textGray py-4">STEP 2: INTERVIEW AND CHOOSE</p>
-                <RoleCard details={contents[1]} />
+                <RoleCard details={content[1]} />
                 <p className="text-textGray py-4">STEP 3: HIRE YOUR NEW EXECUTIVES</p>
-                <RoleCard details={contents[2]} />
+                <RoleCard details={content[2]} />
             </div>
         </div>
     </motion.div>

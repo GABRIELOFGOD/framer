@@ -8,11 +8,13 @@ const Love = () => {
     const testimonies = [
         {
             name: 'Uchenna Michael',
+            icon: 'Images/Team picture-1.png',
             position: 'VP, Partnerships, ThankUCash',
             testimony: 'The search consultants at Revlab understood my needs, worked closely with me to develop our hiring strategy blue print and successful filled every role on time as promised.'
         },
         {
             name: 'Samuel Eze',
+            icon: 'Images/Team picture.png',
             position: 'Executive Director, Dee-Jone Oil and Gas',
             testimony: 'To expand our tech team, we turned to Revlab. They acted swiftly, grasped our requirements, and provided candidates who not only understood the job but were also deeply committed and passionate about our mission. Now, Revlab manages all our recruitment needs at Dee-Jones.'
         }

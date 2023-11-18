@@ -12,11 +12,11 @@ const Footer = () => {
     },
     {
       text: 'about us',
-      path: 'about'
+      path: '/about'
     },
     {
       text: 'candidates',
-      path: 'candidate'
+      path: '/candidate'
     }
   ]
 
@@ -27,10 +27,10 @@ const Footer = () => {
     },
     {
       text: 'Executive Search',
-      path: ''
+      path: '/#executive'
     },
     {
-      text: 'Fractional Hiring',
+      text: 'Fraction by Revlab',
       path: ''
     },
     {

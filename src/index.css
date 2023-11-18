@@ -282,7 +282,7 @@ button, p{
     white-space: nowrap;
     display: flex;
 }
-
+/* 
 @keyframes scrolling {
     from {
         transform: translateX(0);
@@ -321,7 +321,7 @@ button, p{
     top: 0;
 }
 
-/* .loger{
+.loger{
     background-color: green;
     overflow: hidden;
     padding: 10px 0;
@@ -338,15 +338,13 @@ button, p{
     margin: 0 50px;
 } */
 
-.wili{
-    display: inline-block;
+/* .wili{
+    display: flex;
     animation: 5s scrolling infinite linear;
-}
+} */
 
 .wili img{
-    display: inline-block;
     height: 80px;
-    margin: 0 40px;
 }
 
 .popi{

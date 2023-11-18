@@ -12,7 +12,7 @@ const Benefits = () => {
             text: 'Let your new executive handle their department so you can focus on growth'
         },
         {
-            icon: 'Images/100 +.png',
+            icon: 'Images/100+.png',
             topic: '100+ EXECUTIVES',
             text: 'Get matched to some of the vetted executives in our fast-growing community.'
         },
@@ -55,9 +55,9 @@ const Benefits = () => {
         <div className='w-full text-center'>
             <p className=' font-bold text-sm text-textGray'>OUR BENEFITS</p>
             <h2 className='text-dark fuller w-full py-8 text-7xl'>Hire <span className="text-secondary">right</span>, Hire <span className="text-secondary">fast</span></h2>
-            <p className='text-textGray '>With Revlab, you can find and hire a fractional executive in weeks, not months</p>
+            <p className='text-textGray '>With Revlab, you can find and hire a C-level executive in weeks, not months at a fraction of the cost</p>
         </div>
-        <div className='flex flex-wrap justify-between w-full px-48 py-24'>
+        <div className='flex mx-auto flex-wrap justify-around w-full px-48 py-24'>
             <BenefitCard content={benefits[0]} />
             <BenefitCard content={benefits[1]} />
             <BenefitCard content={benefits[2]} />

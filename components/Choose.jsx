@@ -22,11 +22,11 @@ const Choose = () => {
             topic: 'Staffed by top search consultants.',
             text: 'Our seasoned recruiters offer tailored support to help you secure your ideal job, one that maximizes your strengths and propels your career.'
         },
-        {
-            icon: <BiWorld />,
-            topic: 'Experienced founders',
-            text: 'Founded by seasoned recruiters and start-up entrepreneurs with experience building strong teams'
-        },
+        // {
+        //     icon: <BiWorld />,
+        //     topic: 'Experienced founders',
+        //     text: 'Founded by seasoned recruiters and start-up entrepreneurs with experience building strong teams'
+        // },
         {
             icon: <IoIosSettings />,
             topic: 'Technology Driven',
@@ -63,7 +63,7 @@ const Choose = () => {
             <ChooseComp comp={content[0]} />
             <ChooseComp comp={content[1]} />
             <ChooseComp comp={content[2]} />
-            <ChooseComp comp={content[3]} />
+            {/* <ChooseComp comp={content[3]} /> */}
         </div>
     </motion.div>
   )
