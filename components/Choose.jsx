@@ -30,7 +30,7 @@ const Choose = () => {
         {
             icon: <IoIosSettings />,
             topic: 'Technology Driven',
-            text: 'We are enabled by technology and data to deliver unparalleled results in record time'
+            text: 'We leverage data and machine-learning capabilities to deliver candidates that are qualified, vetted and culturally aligned in 10 days or less.'
         }
     ]
     

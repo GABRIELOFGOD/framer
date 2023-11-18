@@ -10,6 +10,7 @@ import { motion, useInView, useAnimation } from 'framer-motion'
 import Logos from '../components/Logos'
 import { baseUrl } from '../context/serverCall'
 import Love from '../components/Love'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   
@@ -44,7 +45,7 @@ const Home = () => {
         <div className='md:flex justify-between'>
           <div className='md:text-left mx-auto md:mx-0 text-center'>
             <p className='md:text-textGray text-sm md:text-xl w-[240px] md:w-[500px] py-5'>We connect ambitious talent with high growth, VC backed, startups and scale-ups.</p>
-            <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-4 text-xs py-2 text-primary px-4 md:px-8'>Book a call</button>
+            <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-4 text-xs py-2 text-primary px-4 md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
           </div>
           <div className="w-[450px] hidden md:flex h-[450px] mt-[-100px] mr-[-80px]">
             <img src='Images/baba.png' className='h-full w-full' alt="group image" />  

@@ -2,6 +2,7 @@ import React from 'react'
 import { IoMdArrowForward } from 'react-icons/io'
 import { useRef, useEffect } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const RoleCard = ({details}) => {
       
@@ -30,7 +31,7 @@ const RoleCard = ({details}) => {
     className='p-10 w-full mb-5 border border-secondary kizz2 rounded-[25px]'>
         <h2 className='text-xl pb-4'>{details.topic}</h2>
         <p className='text-textGray pr-14'>{details.text}</p>
-        {details.link && <p className="text-secondary font-bold py-3 flex my-auto gap-2">{details.link}<IoMdArrowForward className='font-bold text-xl my-auto' /></p>}
+        {details.link && <p className="text-secondary font-bold py-3 flex my-auto gap-2"><Link to='/contact'>{details.link}</Link><IoMdArrowForward className='font-bold text-xl my-auto' /></p>}
     </motion.div>
   )
 }

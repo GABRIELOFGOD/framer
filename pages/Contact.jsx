@@ -39,7 +39,7 @@ const Contact = () => {
                 <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Name' />
                 <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Email' />
                 <textarea className='w-full p-3 my-3 box-border rounded-xl' name="" id="" cols="10" placeholder='Message' rows="10"></textarea>
-                <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[14px] font-bold py-5 text-primary px-8'>Send Message</button>
+                <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[14px] py-5 text-primary px-8'>Send Message</button>
             </form>
             <div className='flex-1'>
                 <div className=''>
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div className='py-8'>
                     <div className='text-2xl'>Address</div>
-                    <p className='py-4 text-md text-textGray'>Ikeja Lagos, Nigeria.</p>
+                    <p className='py-4 text-md text-textGray'>20436 97A Avenue, Langley, BC V1M 2K1, Canada.</p>
                 </div>
                 <div>
                     {/* <p className='flex gap-3'>Tel: +2349061932179 <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i></p> */}

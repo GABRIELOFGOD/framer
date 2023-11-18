@@ -2,6 +2,7 @@ import React from 'react'
 import { useRef, useEffect } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 import { baseUrl } from '../context/serverCall'
+import { Link } from 'react-router-dom'
 
 const DiscContent = () => {
      
@@ -42,7 +43,7 @@ const DiscContent = () => {
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
                     <p className='text-textGray leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Finding visionary leaders who will steer your startup toward success. We identify, vet, and place top-tier executives who align with your company's mission and culture. </p>
-                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-4 px-4 text-primary md:px-8'>Book a call</button>
+                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-4 px-4 text-primary md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
                 </div>
             </div>
             <div className='md:flex-1 disc w-full h-[350px] md:h-full'>
@@ -84,7 +85,7 @@ const DiscContent = () => {
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl font-[950] md:font-normal text-4xl text-left md:leading-[5rem] md:w-[400px]'>Fraction by <span className='text-secondary'>Revlab</span></h2>
                     <p className='text-textGray leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Access the talents you need to drive strategy, structure your teams, and scale operations without the burden of a full compensation package</p>
-                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-2 px-4 text-primary md:px-8'>Book a call</button>
+                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-2 px-4 text-primary md:px-8'><Link to='/fraction'>Learn more</Link></button>
                 </div>
             </div>
             <div className='md:flex-1 ehh md:right-[0] w-full h-[350px] md:h-full'>
