@@ -16,23 +16,23 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: '',
+          path: '/',
           element: <Home />
         },
         {
-          path: 'candidate',
+          path: '/candidate',
           element: <Candidate />
         },
         {
-          path: 'fiction',
+          path: '/fraction',
           element: <Fiction />
         },
         {
-          path: 'about',
+          path: '/about',
           element: <About />
         },
         {
-          path: 'contact',
+          path: '/contact',
           element: <Contact />
         }
       ]

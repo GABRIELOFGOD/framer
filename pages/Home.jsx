@@ -8,33 +8,34 @@ import Carousel from '../components/Carousel'
 import { useRef, useEffect } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 import Logos from '../components/Logos'
+import { baseUrl } from '../context/serverCall'
 
 const Home = () => {
   
-  const ref = useRef(null)
+  // const ref = useRef(null)
 
-  const inView = useInView(ref, { once: true })
+  // const inView = useInView(ref, { once: true })
 
-  const mainControl = useAnimation()
+  // const mainControl = useAnimation()
 
-  useEffect(() => {
-    if(inView) {
-      mainControl.start('visible')
-    }
-  }, [inView])
+  // useEffect(() => {
+  //   if(inView) {
+  //     mainControl.start('visible')
+  //   }
+  // }, [inView])
 
   return (
     <motion.div
-      ref={ref}
-      variants={{
-        hidden: { opacity: 0.3, y: 75 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      initial='hidden'
-      animate={mainControl}
-      transition={{ duration: 0.5, delay: 1 }}
+      // ref={ref}
+      // variants={{
+      //   hidden: { opacity: 0.3, y: 75 },
+      //   visible: { opacity: 1, y: 0 },
+      // }}
+      // initial='hidden'
+      // animate={mainControl}
+      // transition={{ duration: 0.5, delay: 1 }}
     >
-      <div className='w-full pb-0 md:pt-28 py-8 px-28 md:px-48'>
+      <div className='w-full pb-12 md:pt-28 py-8 px-28 md:px-48'>
         {/* =============== HEROE SECTION ====================== */}
         <h2 className='md:w-[800px] text-4xl font-[900] test md:leading-[5rem] md:text-7xl '>
           We <span className='text-secondary'>build the Teams</span> behind Africa's most promising <span className='text-secondary'>Start-ups</span>
@@ -45,7 +46,7 @@ const Home = () => {
             <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-3 text-xs py-2 text-primary px-4 md:px-8'>Book a call</button>
           </div>
           <div className="w-[450px] hidden md:flex h-[450px] mt-[-100px] mr-[-80px]">
-            <img src="Images/baba.png" className='h-full w-full' alt="group image" />  
+            <img src={`${baseUrl}baba.png`} className='h-full w-full' alt="group image" />  
           </div>
         </div>
 

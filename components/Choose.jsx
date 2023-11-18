@@ -29,7 +29,7 @@ const Choose = () => {
         },
         {
             icon: <IoIosSettings />,
-            topic: 'Modern Technology Driven',
+            topic: 'Technology Driven',
             text: 'Enabled by technology and data to deliver unparalleled results in record time'
         }
     ]
@@ -59,7 +59,7 @@ const Choose = () => {
     className='py-20 w-full px-16 md:px-28'>
         <h2 className='text-center font-bold text-3xl md:text-6xl'>Why Choose <span className='text-secondary'>Us</span>?</h2>
         <p className='text-textGray md:text-2xl text-center py-5'>At Revlab, we provide end-to-end recruitment solutions, covering roles from entry-level to C-suite</p>
-        <div className='w-full justify-between flex flex-wrap'>
+        <div className='w-full justify-between md:flex md:flex-wrap'>
             <ChooseComp comp={content[0]} />
             <ChooseComp comp={content[1]} />
             <ChooseComp comp={content[2]} />

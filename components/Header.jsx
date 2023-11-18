@@ -11,15 +11,15 @@ const Header = () => {
         },
         {
             item: 'candidate',
-            path: 'candidate'
+            path: '/candidate'
         },
         {
             item: 'fraction by revlab',
-            path: 'fiction'
+            path: '/fraction'
         },
         {
             item: 'about us',
-            path: 'about'
+            path: '/about'
         }
     ]
 

@@ -17,6 +17,10 @@ body{
     font-family: myFont;
 }
 
+/* button{
+    padding: 10px 120px;
+} */
+
 button, p{
     font-family: 'Inter', sans-serif;
 }
@@ -288,8 +292,61 @@ button, p{
     }
 }
 
+.logo{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo::after{
+    content: '';
+    background: linear-gradient(to left , transparent, white);
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+.logo::before{
+    content: '';
+    background: linear-gradient(to right , transparent, white);
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 0;
+}
+
+/* .loger{
+    background-color: green;
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.grider{
+    display: inline-block;
+    animation: 5s scrolling infinite linear;
+}
+
+.grider .kizz{
+    display: inline-block;
+    margin: 0 50px;
+} */
+
+.wili{
+    display: inline-block;
+    animation: 5s scrolling infinite linear;
+}
+
 .wili img{
+    display: inline-block;
     height: 80px;
+    margin: 0 40px;
 }
 
 .popi{

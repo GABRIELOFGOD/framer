@@ -61,8 +61,8 @@ const Carousel = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='overflow-x-hidden px-[220px] py-24 '>
-        <div className='grid justify-between grid-cols-4 w-full gap-4 '>
+    className='overflow-x-hidden w-full md:px-[220px] md:py-24 '>
+        <div className='flex flex-wrap w-full '>
             <CarouselContent content={content[0]} />
             <CarouselContent content={content[1]} />
             <CarouselContent content={content[2]} />
