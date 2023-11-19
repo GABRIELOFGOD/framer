@@ -37,7 +37,7 @@ const Home = () => {
       // animate={mainControl}
       // transition={{ duration: 0.5, delay: 1 }}
     >
-      <div className='w-full pb-12 md:pt-28 py-8 px-12 md:px-48'>
+      <div className='w-full pb-2 md:pb-12 md:pt-28 py-8 px-12 md:px-48'>
         {/* =============== HEROE SECTION ====================== */}
         <h2 className='md:w-[800px] text-[30px] test md:leading-[5rem] md:text-7xl '>
           We <span className='text-secondary'>build the Teams</span> behind Africa's most promising <span className='text-secondary'>Start-ups</span>
@@ -48,7 +48,7 @@ const Home = () => {
             <button className='bg-secondary rounded-full h-fit my-auto md:text-[15px] md:py-4 text-xs py-2 text-primary px-4 md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
           </div>
           <div className="md:w-[450px] w-full md:flex h-[450px] md:mt-[-100px] md:mr-[-80px]">
-            <img src='Images/baba.png' className='md:h-full w-full' alt="group image" />  
+            <img src='Images/baba.png' className='md:h-full h-fit w-full' alt="group image" />  
           </div>
         </div>
 

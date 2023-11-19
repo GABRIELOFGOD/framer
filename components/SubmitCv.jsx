@@ -26,9 +26,9 @@ const SubmitCv = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }} 
-    className='bg-dark mx-auto items-center text-center justify-center flex flex-col h-[400px]'>
-        <h2 className='text-5xl leading-[4rem] text-primary pb-5 w-[900px]'>Submit your CV and other Informations to get started</h2>
-        <button className='rounded-[35px] bg-primary py-4 px-8 w-fit'>Submit your CV</button>
+    className='bg-dark mx-auto items-center w-full text-center justify-center flex flex-col py-12 md:py-0 md:h-[400px]'>
+        <h2 className='md:text-5xl text-[30px] md:leading-[4rem] text-primary pb-5'>Submit your CV and other Informations to get started</h2>
+        <button className='rounded-[35px] bg-primary md:py-4 py-3 px-4 md:px-8 w-fit'>Submit your CV</button>
     </motion.div>
   )
 }

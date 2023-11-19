@@ -50,13 +50,13 @@ const Roles = () => {
         initial='hidden'
         animate={mainControl}
         transition={{ duration: 0.5, delay: 1 }}
-    className='flex py-32 px-52 gap-6'>
+    className='md:flex md:py-32 px-12 md:px-52 md:gap-6'>
         <div className='flex-1'>
             <p className='text-secondary'>ROLES WE PLACE</p>
-            <h2 className=' test leading-[4.5rem] text-6xl '>How we'll work together</h2>
-            <p className='text-textGray text-xl w-[82%] pt-6 leading-8'>With hundreds of candidates registering with us each week, our 1:1 approach means we can't work with everyone. Here's what you can expect from us;</p>
+            <h2 className=' md:test md:leading-[4.5rem] text-[30px] py-2 md:text-6xl '>How we'll work together</h2>
+            <p className='text-textGray text-[12px] pb-5 md:pb-0 md:text-xl md:w-[82%] md:pt-6 md:leading-8'>With hundreds of candidates registering with us each week, our 1:1 approach means we can't work with everyone. Here's what you can expect from us;</p>
             <img className='w-[400px]' src="Images/qqqq.png" alt="block-image" />
-            <h5 className=' text-xl w-[82%] pt-6 leading-8'>Please don't be offended if we don't feel we can support you. We only work with approximately 5% of candidates who register with us.</h5>
+            <h5 className=' md:text-xl md:w-[82%] pb-10 md:pb-0 pt-6 md:leading-8'>Please don't be offended if we don't feel we can support you. We only work with approximately 5% of candidates who register with us.</h5>
         </div>
         <div className='flex-1'>
             <RoleCard details={contents[0]} />
