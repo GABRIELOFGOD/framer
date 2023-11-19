@@ -26,7 +26,7 @@ const ChooseComp = ({comp}) => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='border-secondary md:w-[30%] flex gap-4 rounded-xl m-3 border-2 py-12 px-12'>
+    className='border-secondary md:w-[30%] flex gap-4 rounded-xl m-3 border-2 py-8 px-8 md:py-12 md:px-12'>
         <i className='text-3xl text-secondary'>{comp.icon}</i>
         <div>
             <h2 className='text-2xl pb-6'>{comp.topic}</h2>

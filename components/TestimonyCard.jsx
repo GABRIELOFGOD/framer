@@ -29,7 +29,7 @@ const TestimonyCard = ({content}) => {
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
  
-    className='w-1/2 border pb-20 relative mx-3 border-gray-200 py-8 px-6 rounded-[20px]'>
+    className='md:w-1/2 border pb-20 relative mb-6 mx-3 border-gray-200 py-8 px-6 rounded-[20px]'>
         <p className='leading-7 text-sm'>{content.testimony}</p>
         <div className='flex gap-3 bottom-6 absolute pt-12 my-auto'>
             {content.icon ? <div className=" h-[50px] w-[50px] border border-secondary rounded-full"><img src={content.icon} alt="Team-picture" /></div> : <FaRegUser /> }

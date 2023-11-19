@@ -56,7 +56,7 @@ const Choose = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='py-20 w-full px-16 md:px-28'>
+    className='py-20 w-full px-6 md:px-28'>
         <h2 className='text-center font-bold text-3xl md:text-6xl'>Why Choose <span className='text-secondary'>Us</span>?</h2>
         <p className='text-textGray md:text-2xl text-center py-5'>At Revlab, we provide end-to-end recruitment solutions, covering roles from entry-level to C-suite</p>
         <div className='w-full justify-between md:flex md:flex-wrap'>

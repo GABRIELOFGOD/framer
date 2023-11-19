@@ -25,7 +25,7 @@ const NewsLetter = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='md:p-32 p-12 md:text-left text-center'>
+    className='md:p-32 p-8 md:text-left text-center'>
         <div className='bg-secondary relative rounded-xl px-12 py-14 flex'>
             <div className='md:w-[70%] w-full'>
                 <h2 className="text-5xl pb-4 text-primary">Join Our Newsletter</h2>

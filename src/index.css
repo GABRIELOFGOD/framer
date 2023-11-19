@@ -239,7 +239,15 @@ button, p{
     right: 100px;
 }
 
+.open{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.open .dex{
+    margin: 15px 0;
+}
 
 .kizz{
     box-shadow: 0 2px 3px #1570ef68;

@@ -41,8 +41,8 @@ const DiscContent = () => {
         className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]' id='executive'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
-                    <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
-                    <p className='text-textGray leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Finding visionary leaders who will steer your startup toward success. We identify, vet, and place top-tier executives who align with your company's mission and culture. </p>
+                    <h2 className='md:text-7xl md:font-normal text-[30px] text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
+                    <p className='text-textGray leading-5 text-[12px] py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Finding visionary leaders who will steer your startup toward success. We identify, vet, and place top-tier executives who align with your company's mission and culture. </p>
                     <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-4 px-4 text-primary md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
                 </div>
             </div>
@@ -62,8 +62,8 @@ const DiscContent = () => {
         className='mx-auto flex md:flex-row-reverse flex-col-reverse box-border h-[600px]' id='talent'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
-                    <h2 className='md:text-7xl font-extrabold md:font-normal text-4xl text-left md:leading-[5rem] w-[300px]'>Technical <span className='text-secondary'>Talent </span>Acquisition</h2>
-                    <p className='text-textGray leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Building high-performing technical teams is our specialty. We source and recruit top engineering, development, and technical talent to drive your product innovation.</p>
+                    <h2 className='md:text-7xl md:font-normal text-[30px] text-left md:leading-[5rem] w-[300px]'>Technical <span className='text-secondary'>Talent </span>Acquisition</h2>
+                    <p className='text-textGray text-[12px] leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Building high-performing technical teams is our specialty. We source and recruit top engineering, development, and technical talent to drive your product innovation.</p>
                     {/* <button className='bg-secondary w-fit rounded-full h-fit my-auto text-[12px] md:py-3 py-2 px-4 text-primary md:px-8'>Book a call</button> */}
                 </div>
             </div>
@@ -83,8 +83,8 @@ const DiscContent = () => {
         className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
                 <div className="md:mx-auto px-8 py-6">
-                    <h2 className='md:text-7xl font-[950] md:font-normal text-4xl text-left md:leading-[5rem] md:w-[400px]'>Fraction by <span className='text-secondary'>Revlab</span></h2>
-                    <p className='text-textGray leading-5 py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Access the talents you need to drive strategy, structure your teams, and scale operations without the burden of a full compensation package</p>
+                    <h2 className='md:text-7xl md:font-normal text-[30px] text-left md:leading-[5rem] md:w-[400px]'>Fraction by <span className='text-secondary'>Revlab</span></h2>
+                    <p className='text-textGray leading-5 text-[12px] py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Access the talents you need to drive strategy, structure your teams, and scale operations without the burden of a full compensation package</p>
                     <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-2 px-4 text-primary md:px-8'><Link to='/fraction'>Learn more</Link></button>
                 </div>
             </div>
