@@ -61,7 +61,7 @@ const Globe = () => {
         transition={{ duration: 0.5, delay: 1 }}
     className='md:flex px-12 w-full py-10 bg-black md:py-24 md:px-32'>
         <div className="md:w-2/3">
-            <h2 className='text-5xl text-primary'>Sectors we <span className="text-secondary">Cover</span></h2>
+            <h2 className='md:text-5xl text-[30px] text-primary'>Sectors we <span className="text-secondary">Cover</span></h2>
             <div className='woo md:py-0 py-5 w-full md:split'>
                 <img src="Images/nnnnn.png"  alt="globe-marketing icon" />
                 <img src="Images/Frame 354.png" alt="globe-marketing icon" />

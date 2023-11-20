@@ -1,12 +1,14 @@
+import React from 'react'
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Layout from '../components/Layout'
-import Home from '../pages/Home'
-import Candidate from '../pages/Candidate'
-import Fiction from '../pages/Fiction'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
+const HomeLazy = React.lazy(() => import('../pages/Home'))
+const CandidateLazy = React.lazy(() => import('../pages/Candidate'))
+const FictionLazy = React.lazy(() => import('../pages/Fiction'))
+const AboutLazy = React.lazy(() => import('../pages/About'))
+const ContactLazy = React.lazy(() => import('../pages/Contact'))
+import Loader from '../components/Loader'
 
 function App() {
 
@@ -17,23 +19,33 @@ function App() {
       children: [
         {
           path: '',
-          element: <Home />
+          element: <React.Suspense fallback={<Loader />}>
+            <HomeLazy />
+          </React.Suspense>
         },
         {
           path: 'candidate',
-          element: <Candidate />
+          element: <React.Suspense fallback={<Loader />}>
+            <CandidateLazy />
+          </React.Suspense>
         },
         {
           path: 'fraction',
-          element: <Fiction />
+          element: <React.Suspense fallback={<Loader />}>
+            <FictionLazy />
+          </React.Suspense>
         },
         {
           path: 'about',
-          element: <About />
+          element: <React.Suspense fallback={<Loader />}>
+            <AboutLazy />
+          </React.Suspense>
         },
         {
           path: 'contact',
-          element: <Contact />
+          element: <React.Suspense fallback={<Loader />}>
+            <ContactLazy />
+          </React.Suspense>
         }
       ]
     }

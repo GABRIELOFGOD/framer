@@ -43,7 +43,7 @@ const DiscContent = () => {
                 <div className="md:mx-auto px-8 py-6">
                     <h2 className='md:text-7xl md:font-normal text-[30px] text-left md:leading-[5rem] md:w-[300px]'>Executive <span className='text-secondary'>Search</span></h2>
                     <p className='text-textGray leading-5 text-[12px] py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Finding visionary leaders who will steer your startup toward success. We identify, vet, and place top-tier executives who align with your company's mission and culture. </p>
-                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-4 px-4 text-primary md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
+                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-3 px-4 text-primary md:px-8'><Link to='https://calendly.com/samuels-revlab/30min'>Book a call</Link></button>
                 </div>
             </div>
             <div className='md:flex-1 disc w-full h-[350px] md:h-full'>
@@ -82,13 +82,13 @@ const DiscContent = () => {
         transition={{ duration: 0.5, delay: 1 }} 
         className='mx-auto flex md:flex-row flex-col-reverse box-border h-[600px]'>
             <div className='flex-1 flex flex-col w-fit text-left h-full md:py-20'>
-                <div className="md:mx-auto px-8 py-6">
+                <div className="md:mx-auto px-8 md:py-6">
                     <h2 className='md:text-7xl md:font-normal text-[30px] text-left md:leading-[5rem] md:w-[400px]'>Fraction by <span className='text-secondary'>Revlab</span></h2>
-                    <p className='text-textGray leading-5 text-[12px] py-3 md:py-5 md:text-lg md:font-light md:w-[400px]'>Access the talents you need to drive strategy, structure your teams, and scale operations without the burden of a full compensation package</p>
-                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-2 px-4 text-primary md:px-8'><Link to='/fraction'>Learn more</Link></button>
+                    <p className='text-textGray leading-5 text-[12px] py-2 md:py-5 md:text-lg md:font-light md:w-[400px]'>Access the talents you need to drive strategy, structure your teams, and scale operations without the burden of a full compensation package</p>
+                    <button className='bg-secondary w-fit rounded-full h-fit my-auto md:py-3 py-1 px-4 text-primary md:px-8'><Link to='/fraction'>Learn more</Link></button>
                 </div>
             </div>
-            <div className='md:flex-1 ehh md:right-[0] w-full h-[350px] md:h-full'>
+            <div className='md:flex-1 ehh md:right-[0] w-full h-[300px] md:h-full'>
                 <img className='scale-[1.2]' src='Images/workers-giving-ideas-new-project.jpg' alt="disc image" />
             </div>
         </motion.div>

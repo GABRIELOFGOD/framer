@@ -26,7 +26,7 @@ const NewsLetter = () => {
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
     className='md:p-32 p-8 md:text-left text-center'>
-        <div className='bg-secondary relative rounded-xl px-12 py-14 flex'>
+        <div className='bg-secondary relative rounded-xl md:px-12 md:py-14 px-6 py-8 flex'>
             <div className='md:w-[70%] w-full'>
                 <h2 className="md:text-5xl text-[30px] pb-4 text-primary">Join Our Newsletter</h2>
                 <p className='text-primary leading-6 text-sm md:w-[70%]' >Stay ahead of the curve with our newsletter, where we share exclusive insights, industry news, and expert advice. Subscribe today and be part of our growing community of tech startup enthusiasts. </p>

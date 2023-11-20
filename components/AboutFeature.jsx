@@ -50,7 +50,7 @@ const AboutFeature = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='md:py-16 py-6 md:px-40 mx-auto px-2 flex bg-dark'>
+    className='md:py-16 py-6 md:px-40 mx-auto px-2 md:flex bg-dark'>
         <FeatureComp content={feature[0]} />
         <FeatureComp content={feature[1]} />
         <FeatureComp content={feature[2]} />

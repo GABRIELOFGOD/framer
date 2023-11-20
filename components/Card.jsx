@@ -27,9 +27,9 @@ const Card = () => {
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
     className='m-auto md:pt-20 pt-10 px-8 md:px-[310px] justify-center'>
-        <div className="grid gap-7 mb-6 grid-cols-2">
+        <div className="md:grid gap-7 mb-6 md:grid-cols-2">
             <div className="flex-1 text-[30px] py-6 border-2 h-fit w-fit md:text-5xl font-[500] md:py-10 md:leading-[4.5rem] rounded-2xl px-6 md:rounded-[65px] border-secondary"><h2>Meet the <span className="text-secondary">Best recruiters</span> you'll ever work with</h2></div>
-            <img className='flex-1 my-auto w-[350px]' src="Images/Revlabs illustration.png" alt="card-image" />
+            <img className='flex-1 md:flex hidden my-auto w-[350px]' src="Images/Revlabs illustration.png" alt="card-image" />
         </div>
         <div className="flex-1 border-2 h-fit w-fit py-8 md:py-10 text-center px-6 md:px-12 rounded-2xl md:rounded-[65px] border-secondary">
             <h2 className=' text-[30px] md:text-5xl font-[500]'>Your <span className="text-secondary">Startup job</span> and <span className="text-secondary">Search</span> partner</h2>

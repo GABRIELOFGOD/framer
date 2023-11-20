@@ -26,11 +26,11 @@ const BenefitCard = ({content}) => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='h-[100px] md:my-0 my-3 overflow-hidden flex rounded-[20px] popi border-2 border-gray-200 w-full'>
-        <div className="w-[100px] my-auto"><img className='w-full ' src={content.icon} alt="benefit-Image" /></div>
+    className='md:h-[100px] md:my-0 my-3 overflow-hidden flex rounded-[20px] popi border-2 border-gray-200 w-full'>
+        <div className="md:w-[100px] w-[80px] my-auto"><img className='w-full ' src={content.icon} alt="benefit-Image" /></div>
         <div className='p-3 text-xs my-auto w-[70%]'>
             <p className='pb-3 font-bold text-black'>{content.topic}</p>
-            <p className='text-dark font-[700]'>{content.text}</p>
+            <p className='text-textGray text-[12px] md:text-md font-[700]'>{content.text}</p>
         </div>
     </motion.div>
   )

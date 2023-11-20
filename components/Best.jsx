@@ -26,9 +26,9 @@ const Best = () => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='md:flex md:py-24 w-full text-primary py-8 px-12 bg-dark md:px-52'>
-        <div className='flex-1 md:w-[400px] w-[300px] mx-auto'>
-            <img src="Images/Revlab cover design.png" className='md:mx-0 mx-auto w-full' alt="start-up" />
+    className='md:flex md:py-24 w-full text-primary py-10 px-12 bg-dark md:px-52'>
+        <div className='flex-1 md:w-[400px] md:h-fit w-[200px] mx-auto'>
+            <img src="Images/Revlab cover design.png" className='md:mx-0 mx-auto h-full w-full' alt="start-up" />
         </div>
         <div className="flex-1 md:mt-0 mt-5 my-auto">
             <h2 className=' md:test md:leading-[4.5rem] text-[30px] md:text-7xl '>What we do <span className="text-greenText">Best</span></h2>

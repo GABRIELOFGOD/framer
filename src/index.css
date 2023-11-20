@@ -240,10 +240,54 @@ button, p{
 }
 
 .open{
+    display: block;
+    width: 100%;
+    position: absolute;
+    padding: 30px 50px;
+    background: white;
+    top: 60px;
+    left: 0;
+    transition: .5s;
+}
+
+.open .todo{
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
+
+.large{
+    position: relative;
+    display: flex;
+    top: 0;
+}
+
+.close{
+    display: block;
+    width: 100%;
+    position: absolute;
+    padding: 30px 50px;
+    background: white;
+    top: -500px;
+    left: 0;
+    transition: .5s;
+}
+/* 
+.unopen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.open .list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.unopen .unlist{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+} */
 
 .open .dex{
     margin: 15px 0;
@@ -367,4 +411,60 @@ button, p{
 .woo img{
     width: 100%;
     margin-top: 20px;
+}
+
+.loader-wrap{
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.loader{
+    background: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader::after{
+    content: '';
+    background: linear-gradient(#1570EF, #1570EF, transparent);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: roll .5s linear infinite;
+    transform-origin: bottom right;
+    top: -50%;
+    left: -50%;
+}
+
+.load-cover{
+    background: white;
+    position: relative;
+    height: 43px;
+    width: 43px;
+    z-index: 99;
+    border-radius: 100%;
+    margin: auto;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

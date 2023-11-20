@@ -26,7 +26,7 @@ const Contact = () => {
     ]
 
   return (
-    <div className='py-8 px-12 md:py-20 md:px-52'>
+    <div className='py-8 px-10 md:py-20 md:px-52'>
         <div className='md:flex'>
             <div className='flex-1'>
                 <p className='font-[600] text-sm'>CONTACT US</p>
