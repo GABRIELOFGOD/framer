@@ -51,13 +51,13 @@ const Benefits = () => {
         initial='hidden'
         animate={mainControl}
         transition={{ duration: 0.5, delay: 1 }}
-    className='px-42 py-12'>
+    className='md:px-42 px-12 py-6 md:py-12'>
         <div className='w-full text-center'>
             <p className=' font-bold text-sm text-textGray'>OUR BENEFITS</p>
-            <h2 className='text-dark fuller w-full py-8 text-7xl'>Hire <span className="text-secondary">right</span>, Hire <span className="text-secondary">fast</span></h2>
-            <p className='text-textGray '>With Revlab, you can find and hire a C-level executive in weeks, not months at a fraction of the cost</p>
+            <h2 className='text-dark md:fuller w-full py-3 text-[30px] md:py-8 md:text-7xl'>Hire <span className="text-secondary">right</span>, Hire <span className="text-secondary">fast</span></h2>
+            <p className='text-textGray md:text-md text-[12px] '>With Revlab, you can find and hire a C-level executive in weeks, not months at a fraction of the cost</p>
         </div>
-        <div className='flex mx-auto flex-wrap justify-around w-full px-48 py-24'>
+        <div className='md:grid gap-5 mx-auto md:grid-cols-2 justify-around w-full md:px-48 md:py-24'>
             <BenefitCard content={benefits[0]} />
             <BenefitCard content={benefits[1]} />
             <BenefitCard content={benefits[2]} />

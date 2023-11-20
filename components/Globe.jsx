@@ -59,19 +59,20 @@ const Globe = () => {
         initial='hidden'
         animate={mainControl}
         transition={{ duration: 0.5, delay: 1 }}
-    className='flex bg-black py-24 px-32'>
-        <div className="w-2/3">
+    className='md:flex px-12 w-full py-10 bg-black md:py-24 md:px-32'>
+        <div className="md:w-2/3">
             <h2 className='text-5xl text-primary'>Sectors we <span className="text-secondary">Cover</span></h2>
-            <div className=' split'>
-                <img src="Images/nnnnn.png" alt="globe-marketing icon" />
+            <div className='woo md:py-0 py-5 w-full md:split'>
+                <img src="Images/nnnnn.png"  alt="globe-marketing icon" />
                 <img src="Images/Frame 354.png" alt="globe-marketing icon" />
             </div>
         </div>
-        <div className="w-[45%] items-start">
-        <canvas
-            ref={canvasRef}
-            style={{ width: 500, height: 500, maxWidth: "100%", aspectRatio: 1 }}
-            />
+        <div className="md:w-[45%] items-start">
+          <canvas
+              ref={canvasRef}
+              style={{ width: 300, height: 300, maxWidth: "100%", aspectRatio: 1 }}
+              className='hidden md:flex'
+          />
         </div>
 
     </motion.div>

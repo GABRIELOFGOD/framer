@@ -26,9 +26,9 @@ const FeatureComp = ({content}) => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }} 
-    className='px-8 py-8 mx-3 rounded-xl w-[300px] bg-[#101828]'>
+    className='md:p-8 mx-1 md:mx-3 rounded-xl p-4 md:w-[300px] bg-[#101828]'>
         {/* <div className='text-3xl mb-3 text-secondary p-3 bg-dark w-fit rounded-full'>{content.icon}</div> */}
-        <b className='text-primary leading-6 font-light text-[22px]'>{content.text}</b>
+        <b className='text-primary md:leading-6 leading-3 text-[12px] font-light md:text-[22px]'>{content.text}</b>
     </motion.div>
   )
 }

@@ -15,6 +15,10 @@ export default {
         'dark': '#000719',
         'greenText': '#52ff80'
       },
+      fontSize:
+      {
+        'md': '14px'
+      }
     },
   },
   plugins: [],

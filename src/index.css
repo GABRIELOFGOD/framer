@@ -270,7 +270,7 @@ button, p{
     background: radial-gradient(#457ff5, #101828, transparent);
     left: 0;
     bottom: -48%;
-    /* z-index: -9; */
+    display: flex;
 }
 
 .show{
@@ -362,4 +362,9 @@ button, p{
 .split img{
     width: 600px;
     margin-top: 30px;
+}
+
+.woo img{
+    width: 100%;
+    margin-top: 20px;
 }

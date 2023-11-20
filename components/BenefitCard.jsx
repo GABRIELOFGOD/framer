@@ -26,7 +26,7 @@ const BenefitCard = ({content}) => {
       initial='hidden'
       animate={mainControl}
       transition={{ duration: 0.5, delay: 1 }}
-    className='h-[100px] m-3 overflow-hidden flex rounded-[20px] popi border-2 border-gray-200 w-[45%]'>
+    className='h-[100px] md:my-0 my-3 overflow-hidden flex rounded-[20px] popi border-2 border-gray-200 w-full'>
         <div className="w-[100px] my-auto"><img className='w-full ' src={content.icon} alt="benefit-Image" /></div>
         <div className='p-3 text-xs my-auto w-[70%]'>
             <p className='pb-3 font-bold text-black'>{content.topic}</p>
