@@ -33,7 +33,7 @@ const Talents = () => {
         <div className='flex-1'>
             <h2 className='md:w-[650px] md:leading-[4.5rem] text-primary text-[30px] md:text-6xl '>Hire the best <span className='text-greenText'>Talents </span>for your Start-up Teams</h2>
             <p className='md:w-[510px] md:leading-[2rem] text-[12px] md:text-[19px] text-primary py-5'>In the ever-evolving landscape of technology startups, one thing remains constant: the need for exceptional talent. At Revlab, we're here to connect visionaries with the leaders who can turn those visions into reality.</p>
-            <button className='bg-secondary rounded-full h-fit my-auto text-[12px] py-3 text-primary px-8'><Link to='/contact'>Get in touch</Link></button>
+            <button className='bg-secondary rounded-full h-fit my-auto text-[12px] md:text-md py-3 text-primary px-8'><Link to='/contact'>Get in touch</Link></button>
         </div>
     </motion.div>
   )

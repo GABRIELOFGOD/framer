@@ -224,6 +224,7 @@ button, p{
 
 .capitalize .active{
     color: #1570EF;
+    font-weight: bold;
 }
 
 .kere{
