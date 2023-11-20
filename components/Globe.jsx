@@ -70,7 +70,7 @@ const Globe = () => {
         <div className="md:w-[45%] items-start">
           <canvas
               ref={canvasRef}
-              style={{ width: 300, height: 300, maxWidth: "100%", aspectRatio: 1 }}
+              style={{ width: 500, height: 500, maxWidth: "100%", aspectRatio: 1 }}
               className='hidden md:flex'
           />
         </div>

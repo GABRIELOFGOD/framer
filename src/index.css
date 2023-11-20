@@ -144,12 +144,26 @@ button, p{
     /* z-index: -80; */
 }
 
+.img3m{
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    height: fit-content;
+    overflow: hidden;
+    top: 0;
+    transform: rotate(0);
+    right: 0;
+}
+
 .img3 img{
     position: absolute;
     scale: 1.8;
     right: -10px;
     top: 30px;
 }
+
+
+
 
 .form input,
 .form textarea{
