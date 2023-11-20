@@ -26,31 +26,31 @@ const Contact = () => {
     ]
 
   return (
-    <div className=' py-20 px-52'>
-        <div className='flex'>
+    <div className='py-8 px-12 md:py-20 md:px-52'>
+        <div className='md:flex'>
             <div className='flex-1'>
                 <p className='font-[600] text-sm'>CONTACT US</p>
-                <h2 className='test leading-[4rem] py-8 text-5xl '>There is a modern way to hire. <span className="text-secondary">Let's show you</span></h2>
-                <p className='text-textGray text-md py-3 font-[500]'>Our friendly team would love to hear from you</p>
+                <h2 className='md:test md:leading-[4rem] md:py-8 leading-8 py-3 text-[30px] md:text-5xl '>There is a modern way to hire. <span className="text-secondary">Let's show you</span></h2>
+                <p className='text-textGray md:text-md text-[12px] py-3 font-[500]'>Our friendly team would love to hear from you</p>
             </div>
-            <div className="flex-1"><img className='' src="Images/MESSAGE.png" alt="aeroplane-image" /></div>
+            <div className="flex-1 hidden md:flex"><img className='' src="Images/MESSAGE.png" alt="aeroplane-image" /></div>
         </div>
-        <div className='flex gap-10'>
-            <form className='form flex-1' onSubmit={e => e.preventDefault()}>
+        <div className='md:flex md:gap-10'>
+            <form className='form md:pb-0 pb-10 flex-1' onSubmit={e => e.preventDefault()}>
                 <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Name' />
                 <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Email' />
                 <textarea className='w-full p-3 my-3 box-border rounded-xl' name="" id="" cols="10" placeholder='Message' rows="10"></textarea>
-                <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[14px] py-5 text-primary px-8'>Send Message</button>
+                <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[12px] py-5 text-primary px-8'>Send Message</button>
             </form>
             <div className='flex-1'>
                 <div className=''>
-                    <div className='text-2xl'>Contact us via Email</div>
-                    <p className='py-4 text-md text-textGray'>Hire@hirewithrevlab.com</p>
-                    <span className='flex gap-3'>Book a call on Calendly <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i> </span>
+                    <div className='md:text-2xl text-lg'>Contact us via Email</div>
+                    <p className='md:py-4 py-2 text-[12px] md:text-md text-textGray'>Hire@hirewithrevlab.com</p>
+                    <span className='flex text-md md:text-lg gap-3'>Book a call on Calendly <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i> </span>
                 </div>
                 <div className='py-8'>
-                    <div className='text-2xl'>Address</div>
-                    <p className='py-4 text-md text-textGray'>20436 97A Avenue, Langley, BC V1M 2K1, Canada.</p>
+                    <div className='md:text-2xl text-lg'>Address</div>
+                    <p className='py-4 text-[12px] md:text-md text-textGray'>20436 97A Avenue, Langley, BC V1M 2K1, Canada.</p>
                 </div>
                 <div>
                     {/* <p className='flex gap-3'>Tel: +2349061932179 <i className='my-auto text-secondary font-bold text-xl'><IoMdArrowForward /></i></p> */}
