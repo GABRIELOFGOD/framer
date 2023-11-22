@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs'
+import { BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
@@ -22,10 +22,10 @@ const Footer = () => {
   ]
 
   const quickLink = [
-    {
-      text: 'Our Offerings',
-      path: ''
-    },
+    // {
+    //   text: 'Our Offerings',
+    //   path: ''
+    // },
     {
       text: 'Executive Search',
       path: '/#executive'
@@ -41,10 +41,10 @@ const Footer = () => {
   ]
 
   const blog = [
-    {
-      text: 'blog',
-      path: ''
-    },
+    // {
+    //   text: 'blog',
+    //   path: ''
+    // },
     {
       text: 'contact us',
       path: '/contact'
@@ -52,18 +52,22 @@ const Footer = () => {
   ]
 
   const social = [
-    {
-      icon: <BsFacebook />,
-      link: ''
-    },
+    // {
+    //   icon: <BsFacebook />,
+    //   link: ''
+    // },
     {
       icon: <BsTwitter />,
-      link: ''
+      link: 'https://x.com/revlabafrica?s=21&t=aSKeP5XmBTV55S4cYP-g6A'
     },
     {
       icon: <BsLinkedin />,
-      link: ''
-    }
+      link: 'https://www.linkedin.com/company/revlab-inc/'
+    },
+    {
+        icon: <BsInstagram />,
+        link: 'https://instagram.com/revlab_africa?igshid=NGVhN2U2NjQ0Yg=='
+    },
   ]
 
   return (
@@ -74,9 +78,7 @@ const Footer = () => {
         <div className='flex gap-4'>
           {
             social.map((icon, index) => (
-              <Link to={icon.link} key={index}>
-                <div className='text-primary p-2 rounded-full bg-textGray'>{icon.icon}</div>
-              </Link>
+              <Link className='text-primary p-3 rounded-full bg-textGray' to={icon.link} key={index}>{icon.icon}</Link>
             ))
           }
         </div>

@@ -70,7 +70,7 @@ const Hiring = () => {
                 <p className='text-secondary font-bold text-sm'>THE PROBLEM</p>
                 <h2 className=' md:test md:leading-[5rem] md:text-7xl text-[30px] leading-8 py-3 md:py-6 '>Hiring a Top Executive is <div className="span text-secondary">Tough</div></h2>
                 <p className='text-textGray text-[12px] md:text-md md:leading-7 md:w-[350px]'>Founders spend too much time and money to hire key executives, often needing to replace them in a couple of years anyway.</p>
-                <img className='full mx-auto my-10 md:my-3' src="Images/illustration.png" alt="Illustration-Image" />
+                <img loading='lazy' className='full mx-auto my-10 md:my-3' src="Images/illustration.png" alt="Illustration-Image" />
             </div>
             <div className="flex-1">
                 <RoleCard details={contents[0]} />
@@ -82,7 +82,7 @@ const Hiring = () => {
             <div className=" md:w-[500px] flex md:mr-[-50px] flex-col md:right-3">
                 <p className='text-secondary font-bold text-sm'>THE SOLUTION</p>
                 <h2 className=' md:test md:leading-[5rem] md:w-[400px] md:text-7xl text-[30px] py-3 md:py-6 '>How <span className="text-secondary">Fraction</span> works?</h2>
-                <p className='text-textGray text-[12px] text-md md:leading-7 md:w-[350px]'>Use Revlab’s marketplace of vetted fractional executives.</p>
+                <p className='text-textGray text-[12px] md:text-md md:leading-7 md:w-[350px]'>Use Revlab’s marketplace of vetted fractional executives.</p>
                 <img className='full mt-12' src="Images/Revlabs illustrationaaaa.png" alt="Illustration-Image" />
             </div>
             <div className=" md:w-[700px]">

@@ -9,20 +9,20 @@ const Contact = () => {
     const social = [
         {
             icon: <BsTwitter />,
-            path: ''
+            path: 'https://x.com/revlabafrica?s=21&t=aSKeP5XmBTV55S4cYP-g6A'
         },
         {
             icon: <BsLinkedin />,
-            path: ''
+            path: 'https://www.linkedin.com/company/revlab-inc/'
         },
         {
             icon: <BsInstagram />,
             path: 'https://instagram.com/revlab_africa?igshid=NGVhN2U2NjQ0Yg=='
         },
-        {
-            icon: <BsYoutube />,
-            path: ''
-        }
+        // {
+        //     icon: <BsYoutube />,
+        //     path: ''
+        // }
     ]
 
   return (

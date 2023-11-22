@@ -260,7 +260,7 @@ button, p{
     position: absolute;
     padding: 30px 50px;
     background: white;
-    top: 60px;
+    top: 50px;
     left: 0;
     transition: .5s;
 }
