@@ -36,10 +36,10 @@ const Contact = () => {
             <div className="flex-1 hidden md:flex"><img className='' src="Images/MESSAGE.png" alt="aeroplane-image" /></div>
         </div>
         <div className='md:flex md:gap-10'>
-            <form className='form md:pb-0 pb-10 flex-1' onSubmit={e => e.preventDefault()}>
-                <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Name' />
-                <input className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Email' />
-                <textarea className='w-full p-3 my-3 box-border rounded-xl' name="" id="" cols="10" placeholder='Message' rows="10"></textarea>
+            <form action="https://formsubmit.co/f4d73bef1f5e580cf1afb328a55679b6" method="POST" className='form md:pb-0 pb-10 flex-1'>
+                <input name='name' className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Name' />
+                <input name='email' className='w-full p-3 my-3 box-border rounded-xl' type="text" placeholder='Email' />
+                <textarea className='w-full p-3 my-3 box-border rounded-xl' name="message" id="" cols="10" placeholder='Message' rows="10"></textarea>
                 <button className='bg-secondary w-full rounded-xl h-fit my-auto text-[12px] py-5 text-primary px-8'>Send Message</button>
             </form>
             <div className='flex-1'>

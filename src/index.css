@@ -254,13 +254,17 @@ button, p{
     right: 100px;
 }
 
+input, textarea{
+    outline: none;
+}
+
 .open{
     display: block;
     width: 100%;
     position: absolute;
     padding: 30px 50px;
     background: white;
-    top: 50px;
+    top: 41px;
     left: 0;
     transition: .5s;
 }

@@ -40,7 +40,7 @@ const Header = () => {
     }
 
   return (
-    <div className='flex w-full sticky z-50 bg-primary top-0 lg:h-20 my-auto justify-between px-6 md:px-8 py-2 md:py-3 lg:py-5 lg:px-10'>
+    <div className='flex w-full sticky z-50 bg-primary top-0 lg:h-20 my-auto justify-between px-6 md:px-8 py-3 md:py-3 lg:py-5 lg:px-10'>
         <Link to='/' className='my-auto'>
             <img
                 src="/Images/Revlab logo (2).png"
